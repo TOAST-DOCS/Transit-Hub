@@ -1,4 +1,4 @@
-# Network > Transit Hub > 콘솔 사용 가이드
+## Network > Transit Hub > 콘솔 사용 가이드
 콘솔에서 Transit Hub 서비스를 사용하는 방법을 설명합니다.
 
 ## 관리
