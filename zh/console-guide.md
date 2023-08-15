@@ -144,7 +144,7 @@ To create **routing association**, use the following steps.
 2. Click **Create Routing Association** to display the creation screen.
 3. On the creation screen, enter the information about **Routing Association**.
     * Attach: Select **attachment** for a routing table to receive packets.
-        > [Note] One **attachment** on a Transit Hub can only create one **routing association** on a routing table.
+    > [Note] One **attachment** on a Transit Hub can only create one **routing association** on a routing table.
 
 ##### Delete Routing Association
 
@@ -170,7 +170,7 @@ To create **routing propagation**, use the following steps.
 2. Click **Create Routing Propagation** to display the creation screen.
 3. On the creation screen, enter the information about **Routing Propagation**.
     * Attach: Select **attachment** that automatically creates a routing rule for routing table to receive packets.
-        > [Note] One **attachment** in a transit hub can create up to one **routing propagation** per routing table.
+    > [Note] One **attachment** in a transit hub can create up to one **routing propagation** per routing table.
 
 ##### Delete Routing Propagation
 
@@ -194,7 +194,7 @@ To create **routing rule** , use the following steps.
 2. Click **Create Routing Rule** to display the creation screen.
 3. On the creation screen, enter the information about **routing rule**.
     * Target CIDR: Enter the destination network band for the routing policy.
-        > [Note] The priority of **routing rules** in the routing table is determined by the Longest Pre-fix Matching result of CIDR set in the routing rule.
+    > [Note] The priority of **routing rules** in the routing table is determined by the Longest Pre-fix Matching result of CIDR set in the routing rule.
     * Attach: Select **attachment** for routing table to receive packets.
 
 ##### Delete Routing Rule
@@ -284,9 +284,9 @@ To create **Multicast group**, use the following steps.
     * Multicast association: Select **multicast association**.
     * Network interface: Select **network interface**.
     * Group IP Address: Enter the multicast IP address.
-        > [Note]
-        > * Must be entered in the range of 224.0.0.0/4.
-        > * 221.0.0.1 cannot be entered.  
+    > [Note]
+    > * Must be entered in the range of 224.0.0.0/4.
+    > * 221.0.0.1 cannot be entered.  
     * Type: Choose between member and source
         * Member<br>
           Receive multicast packets whose destination is the group IP address.<br>
