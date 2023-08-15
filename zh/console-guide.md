@@ -47,12 +47,12 @@ To share Transit Hub, use the following steps.
 1. Go to **Network > Transit Hub > Manage**.
 2. Select a transit hub that you want to share from the list on the screen.
 3. Click **Share with Another Project**, and on the share screen, enter the tenant ID of the other party that you want to share with.
-    > [Note] How to check out the **tenant ID of another project. <br>
-    > [Note] If you do not have access to another project, obtain a tenant ID from the administrator of the project.
-    > 1. Access the console screen of the project.
-    > 2. Go to **Network > VPC > Management**.
-    > 3. Select one of the VPCs that appears in the screen list.
-    > 4. Copy the ID value shown in **Basic Information > Tenant ID.
+> [Note] How to check out the **tenant ID of another project. <br>
+> [Note] If you do not have access to another project, obtain a tenant ID from the administrator of the project.
+> 1. Access the console screen of the project.
+> 2. Go to **Network > VPC > Management**.
+> 3. Select one of the VPCs that appears in the screen list.
+> 4. Copy the ID value shown in **Basic Information > Tenant ID.
 
 ## Attach
 
@@ -70,9 +70,9 @@ To create **attachment**, use the following steps.
     * Transit hub type: Select **general transit hub** created by the same project or **shared transit hub** shared by another projects.
     * Transit hub: Select a **transit hub** where the **attachment** will be created.
     * Resource type: Select a resource type.
-        > [Note] Currently, only VPC can be selected as the resource type.
+    > [Note] Currently, only VPC can be selected as the resource type.
     * Resource: Select a resource that is related to **attachment**.
-        > [Note] Since only VPC can be selected as the resource type, only the VPC list is automatically output.
+    > [Note] Since only VPC can be selected as the resource type, only the VPC list is automatically output.
     * Subnet: Select a subnet where the **network interface** of the **attachment** is created.
 
 ### Modify Attachment
