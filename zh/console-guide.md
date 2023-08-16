@@ -28,7 +28,7 @@ A transit hub can be modified as follows. You can only change the name and descr
 
 1. Go to **Network > Transit Hub > Manage**.
 2. Select a transit hub that you want to modify from the list on the screen.
-3. Click **Modify Transit Hubto display the modification screen.
+3. Click **Modify Transit Hub** to display the modification screen.
 4. On the modification screen, make changes to an item.
 
 ### Delete Transit Hub
@@ -37,7 +37,7 @@ To delete a transit hub, use the following steps.
 
 1. Go to **Network > Transit Hub > Manage**.
 2. Select a transit hub that you want to delete from the list on the screen.
-3. Click **Delete Transit Hub to delete.
+3. Click **Delete Transit Hub** to delete.
 
 ### Share with another project
 
