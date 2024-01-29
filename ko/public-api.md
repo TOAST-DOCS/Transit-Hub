@@ -1003,3 +1003,213 @@ X-Auth-Token: {tokenId}
 
 
 
+
+
+## 라우팅 룰
+
+### 라우팅 룰 목록 보기
+
+```
+GET /v2.0/gateways/transithub_routing_rules/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| id | Query | UUID | - | 조회할 라우팅 룰 ID |
+| name | Query | String | - | 조회할 라우팅 룰 이름 |
+| action | Query | Enum | - | 조회할 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
+| rule_type | Query | Enum | - | 조회할 라우팅 룰 타입<br>`STATIC`, `PROPAGATED` 중 하나 |
+| attachment_id | Query | UUID | - | 조회할 연결 ID |
+| routing_table_id | Query | UUID | - | 조회할 라우팅 테이블 ID |
+
+
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_rules | Body | Array | 라우팅 룰 정보 객체 목록 |
+| transithub_routing_rules.id | Body | UUID | 라우팅 룰 ID |
+| transithub_routing_rules.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_rules.name | Body | String | 라우팅 룰 이름 |
+| transithub_routing_rules.description | Body | String | 라우팅 룰 설명 |
+| transithub_routing_rules.cidr | Body | String | 라우팅 룰 IP 대역 |
+| transithub_routing_rules.action | Body | Enum | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
+| transithub_routing_rules.rule_type | Body | Enum | 라우팅 룰 타입<br>`STATIC`, `PROPAGATED` 중 하나 |
+| transithub_routing_rules.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_rules.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+| transithub_routing_rules.propagation_id | Body | UUID | 라우팅 전파 ID, 전파에 의해 라우팅 타입이 `PROPAGATED`인 경우 사용 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 룰 보기
+
+```
+GET /v2.0/gateways/transithub_routing_rules/{routingRuleId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| routingRuleId | URL | UUID | O | 라우팅 룰 ID |
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_rule | Body | Object | 라우팅 룰 정보 객체 |
+| transithub_routing_rule.id | Body | UUID | 라우팅 룰 ID |
+| transithub_routing_rule.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_rule.name | Body | String | 라우팅 룰 이름 |
+| transithub_routing_rule.description | Body | String | 라우팅 룰 설명 |
+| transithub_routing_rule.cidr | Body | String | 라우팅 룰 IP 대역 |
+| transithub_routing_rule.action | Body | Enum | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
+| transithub_routing_rule.rule_type | Body | Enum | 라우팅 룰 타입<br>`STATIC`, `PROPAGATED` 중 하나 |
+| transithub_routing_rule.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_rule.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+| transithub_routing_rule.propagation_id | Body | UUID | 라우팅 전파 ID, 전파에 의해 라우팅 타입이 `PROPAGATED`인 경우 사용 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 룰 생성하기
+
+```
+POST /v2.0/gateways/transithub_routing_rules/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| transithub_routing_rule | Body | Object | O | 라우팅 룰 정보 객체 |
+| transithub_routing_rule.name | Body | String | - | 라우팅 룰 이름 |
+| transithub_routing_rule.description | Body | String | - | 라우팅 룰 설명 |
+| transithub_routing_rule.cidr | Body | String | O | 라우팅 룰 IP 대역 |
+| transithub_routing_rule.action | Body | Enum | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
+| transithub_routing_rule.attachment_id | Body | UUID | 송신 대상 연결(Attachment) ID |
+| transithub_routing_rule.routing_table_id | Body | UUID | 라우팅 룰이 등록될 라우팅 테이블 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_rule | Body | Object | 라우팅 룰 정보 객체 |
+| transithub_routing_rule.id | Body | UUID | 라우팅 룰 ID |
+| transithub_routing_rule.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_rule.name | Body | String | 라우팅 룰 이름 |
+| transithub_routing_rule.description | Body | String | 라우팅 룰 설명 |
+| transithub_routing_rule.cidr | Body | String | 라우팅 룰 IP 대역 |
+| transithub_routing_rule.action | Body | Enum | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
+| transithub_routing_rule.rule_type | Body | Enum | 라우팅 룰 타입<br>`STATIC`, `PROPAGATED` 중 하나 |
+| transithub_routing_rule.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_rule.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+| transithub_routing_rule.propagation_id | Body | UUID | 라우팅 전파 ID, 전파에 의해 라우팅 타입이 `PROPAGATED`인 경우 사용 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 룰 수정하기
+
+```
+PUT /v2.0/gateways/transithub_routing_rules/{routingRuleId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| routingRuleId | URL | UUID | O | 라우팅 룰 ID |
+| transithub_routing_rule | Body | Object | O | 라우팅 룰 정보 객체 |
+| transithub_routing_rule.name | Body | String | - | 라우팅 룰 이름 |
+| transithub_routing_rule.description | Body | String | - | 라우팅 룰 설명 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_rule | Body | Object | 라우팅 룰 정보 객체 |
+| transithub_routing_rule.id | Body | UUID | 라우팅 룰 ID |
+| transithub_routing_rule.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_rule.name | Body | String | 라우팅 룰 이름 |
+| transithub_routing_rule.description | Body | String | 라우팅 룰 설명 |
+| transithub_routing_rule.cidr | Body | String | 라우팅 룰 IP 대역 |
+| transithub_routing_rule.action | Body | Enum | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
+| transithub_routing_rule.rule_type | Body | Enum | 라우팅 룰 타입<br>`STATIC`, `PROPAGATED` 중 하나 |
+| transithub_routing_rule.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_rule.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+| transithub_routing_rule.propagation_id | Body | UUID | 라우팅 전파 ID, 전파에 의해 라우팅 타입이 `PROPAGATED`인 경우 사용 |
+
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 룰 삭제하기
+
+```
+DELETE /v2.0/gateways/transithub_routing_rules/{routingRuleId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| routingRuleId | URL | UUID | O | 라우팅 룰 ID |
+
+
+#### 응답
+이 API는 응답 본문을 반환하지 않습니다.
+
+
+
