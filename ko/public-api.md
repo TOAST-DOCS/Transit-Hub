@@ -53,7 +53,7 @@ X-Auth-Token: {tokenId}
 ### 트랜짓 허브 보기
 
 ```
-GET /v2.0/gateways/transithubs/{transithubId}
+GET /v2.0/gateways/transithubs/{transitHubId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -63,7 +63,7 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 필수 | 설명 |
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
-| transithubId | URL | UUID | O | 트랜짓 허브 ID |
+| transitHubId | URL | UUID | O | 트랜짓 허브 ID |
 
 #### 응답
 
@@ -140,7 +140,7 @@ X-Auth-Token: {tokenId}
 ### 트랜짓 허브 수정하기
 
 ```
-PUT /v2.0/gateways/transithubs/{transithubId}
+PUT /v2.0/gateways/transithubs/{transitHubId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -149,7 +149,7 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 필수 | 설명 |
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
-| transithubId | URL | UUID | O | 트랜짓 허브 ID |
+| transitHubId | URL | UUID | O | 트랜짓 허브 ID |
 | transithub | Body | Object | O | 트랜짓 허브 정보 객체 |
 | transithub.name | Body | String | - | 트랜짓 허브 이름 |
 | transithub.description | Body | String | - | 트랜짓 허브 설명 |
@@ -186,7 +186,7 @@ X-Auth-Token: {tokenId}
 ### 트랜짓 허브 삭제하기
 
 ```
-DELETE /v2.0/gateways/transithubs/{transithubId}
+DELETE /v2.0/gateways/transithubs/{transitHubId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -196,7 +196,7 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 필수 | 설명 |
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
-| transithubId | URL | UUID | O | 트랜짓 허브 ID |
+| transitHubId | URL | UUID | O | 트랜짓 허브 ID |
 
 
 #### 응답
@@ -312,7 +312,7 @@ X-Auth-Token: {tokenId}
 | transithub_attachment.resource_id | Body | UUID | O | 리소스 ID |
 | transithub_attachment.resource_type | Body | UUID | O | 리소스 타입, 현재 `VPC` 타입만 입력 가능 |
 | transithub_attachment.subnet_id | Body | UUID | O | 서브넷 ID |
-| transithub_attachment.transithub_id | Body | UUID | O | 트랜짓 허브 ID |
+| transithub_attachment.transithub_id | Body | UUID | O | 연결이 등록될 트랜짓 허브 ID |
 
 <details><summary>예시</summary>
 
@@ -463,7 +463,7 @@ X-Auth-Token: {tokenId}
 ### 라우팅 테이블 보기
 
 ```
-GET /v2.0/gateways/transithub_routing_tables/{routingtableId}
+GET /v2.0/gateways/transithub_routing_tables/{routingTableId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -473,7 +473,7 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 필수 | 설명 |
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
-| routingtableId | URL | UUID | O | 라우팅 테이블 ID |
+| routingTableId | URL | UUID | O | 라우팅 테이블 ID |
 
 #### 응답
 
@@ -510,7 +510,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_table | Body | Object | O | 라우팅 테이블 정보 객체 |
 | transithub_routing_table.name | Body | String | - | 라우팅 테이블 이름 |
 | transithub_routing_table.description | Body | String | - | 라우팅 테이블 설명 |
-| transithub_routing_table.transithub_id | Body | UUID | O | 트랜짓 허브 ID |
+| transithub_routing_table.transithub_id | Body | UUID | O | 라우팅 테이블이 등록될 트랜짓 허브 ID |
 
 <details><summary>예시</summary>
 
@@ -542,7 +542,7 @@ X-Auth-Token: {tokenId}
 ### 라우팅 테이블 수정하기
 
 ```
-PUT /v2.0/gateways/transithub_routing_tables/{routingtableId}
+PUT /v2.0/gateways/transithub_routing_tables/{routingTableId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -551,6 +551,7 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 필수 | 설명 |
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
+| routingTableId | URL | UUID | O | 라우팅 테이블 ID |
 | transithub_routing_table | Body | Object | O | 라우팅 테이블 정보 객체 |
 | transithub_routing_table.name | Body | String | - | 라우팅 테이블 이름 |
 | transithub_routing_table.description | Body | String | - | 라우팅 테이블 설명 |
@@ -586,7 +587,7 @@ X-Auth-Token: {tokenId}
 ### 라우팅 테이블 삭제하기
 
 ```
-DELETE /v2.0/gateways/transithub_routing_tables/{routingtableId}
+DELETE /v2.0/gateways/transithub_routing_tables/{routingTableId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -596,7 +597,7 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 필수 | 설명 |
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
-| routingtableId | URL | UUID | O | 라우팅 테이블 ID |
+| routingTableId | URL | UUID | O | 라우팅 테이블 ID |
 
 
 #### 응답
@@ -612,3 +613,384 @@ X-Auth-Token: {tokenId}
 
 
 
+## 라우팅 연결
+
+### 라우팅 연결 목록 보기
+
+```
+GET /v2.0/gateways/transithub_routing_associations/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| id | Query | UUID | - | 조회할 라우팅 연결 ID |
+| name | Query | String | - | 조회할 라우팅 연결 이름 |
+| attachment_id | Query | UUID | - | 조회할 연결 ID |
+| routing_table_id | Query | UUID | - | 조회할 라우팅 테이블 ID |
+
+
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_associations | Body | Array | 라우팅 연결 정보 객체 목록 |
+| transithub_routing_associations.id | Body | UUID | 라우팅 연결 ID |
+| transithub_routing_associations.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_associations.name | Body | String | 라우팅 연결 이름 |
+| transithub_routing_associations.description | Body | String | 라우팅 연결 설명 |
+| transithub_routing_associations.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_associations.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 연결 보기
+
+```
+GET /v2.0/gateways/transithub_routing_associations/{routingAssociationId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| routingAssociationId | URL | UUID | O | 라우팅 연결 ID |
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_association | Body | Object | 라우팅 연결 정보 객체 |
+| transithub_routing_association.id | Body | UUID | 라우팅 연결 ID |
+| transithub_routing_association.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_association.name | Body | String | 라우팅 연결 이름 |
+| transithub_routing_association.description | Body | String | 라우팅 연결 설명 |
+| transithub_routing_association.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_association.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 연결 생성하기
+
+```
+POST /v2.0/gateways/transithub_routing_associations/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| transithub_routing_association | Body | Object | O | 라우팅 연결 정보 객체 |
+| transithub_routing_association.name | Body | String | - | 라우팅 연결 이름 |
+| transithub_routing_association.description | Body | String | - | 라우팅 연결 설명 |
+| transithub_routing_association.attachment_id | Body | UUID | O | 라우팅 연결 대상 연결(Attachment) ID |
+| transithub_routing_association.routing_table_id | Body | UUID | O | 라우팅 연결이 등록될 라우팅 테이블 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_association | Body | Object | 라우팅 연결 정보 객체 |
+| transithub_routing_association.id | Body | UUID | 라우팅 연결 ID |
+| transithub_routing_association.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_association.name | Body | String | 라우팅 연결 이름 |
+| transithub_routing_association.description | Body | String | 라우팅 연결 설명 |
+| transithub_routing_association.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_association.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 연결 수정하기
+
+```
+PUT /v2.0/gateways/transithub_routing_associations/{routingAssociationId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| routingAssociationId | URL | UUID | O | 라우팅 연결 ID |
+| transithub_routing_association | Body | Object | O | 라우팅 연결 정보 객체 |
+| transithub_routing_association.name | Body | String | - | 라우팅 연결 이름 |
+| transithub_routing_association.description | Body | String | - | 라우팅 연결 설명 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_association | Body | Object | 라우팅 연결 정보 객체 |
+| transithub_routing_association.id | Body | UUID | 라우팅 연결 ID |
+| transithub_routing_association.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_association.name | Body | String | 라우팅 연결 이름 |
+| transithub_routing_association.description | Body | String | 라우팅 연결 설명 |
+| transithub_routing_association.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_association.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 테이블 삭제하기
+
+```
+DELETE /v2.0/gateways/transithub_routing_associations/{routingAssociationId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| routingAssociationId | URL | UUID | O | 라우팅 연결 ID |
+
+
+#### 응답
+이 API는 응답 본문을 반환하지 않습니다.
+
+
+
+
+
+
+
+
+
+
+
+## 라우팅 전파
+
+### 라우팅 전파 목록 보기
+
+```
+GET /v2.0/gateways/transithub_routing_propagations/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| id | Query | UUID | - | 조회할 라우팅 전파 ID |
+| name | Query | String | - | 조회할 라우팅 전파 이름 |
+| attachment_id | Query | UUID | - | 조회할 연결 ID |
+| routing_table_id | Query | UUID | - | 조회할 라우팅 테이블 ID |
+
+
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_propagations | Body | Array | 라우팅 전파 정보 객체 목록 |
+| transithub_routing_propagations.id | Body | UUID | 라우팅 전파 ID |
+| transithub_routing_propagations.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_propagations.name | Body | String | 라우팅 전파 이름 |
+| transithub_routing_propagations.description | Body | String | 라우팅 전파 설명 |
+| transithub_routing_propagations.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_propagations.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 전파 보기
+
+```
+GET /v2.0/gateways/transithub_routing_propagations/{routingPropagationId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| routingPropagationId | URL | UUID | O | 라우팅 전파 ID |
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_propagation | Body | Object | 라우팅 전파 정보 객체 |
+| transithub_routing_propagation.id | Body | UUID | 라우팅 전파 ID |
+| transithub_routing_propagation.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_propagation.name | Body | String | 라우팅 전파 이름 |
+| transithub_routing_propagation.description | Body | String | 라우팅 전파 설명 |
+| transithub_routing_propagation.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_propagation.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 전파 생성하기
+
+```
+POST /v2.0/gateways/transithub_routing_propagations/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| transithub_routing_propagation | Body | Object | O | 라우팅 전파 정보 객체 |
+| transithub_routing_propagation.name | Body | String | - | 라우팅 전파 이름 |
+| transithub_routing_propagation.description | Body | String | - | 라우팅 전파 설명 |
+| transithub_routing_propagation.attachment_id | Body | UUID | O | 라우팅 전파 대상 연결(Attachment) ID |
+| transithub_routing_propagation.routing_table_id | Body | UUID | O | 라우팅 전파가 등록될 라우팅 테이블 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_association | Body | Object | 라우팅 연결 정보 객체 |
+| transithub_routing_association.id | Body | UUID | 라우팅 연결 ID |
+| transithub_routing_association.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_association.name | Body | String | 라우팅 연결 이름 |
+| transithub_routing_association.description | Body | String | 라우팅 연결 설명 |
+| transithub_routing_association.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_association.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 연결 수정하기
+
+```
+PUT /v2.0/gateways/transithub_routing_associations/{routingAssociationId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| routingAssociationId | URL | UUID | O | 라우팅 연결 ID |
+| transithub_routing_association | Body | Object | O | 라우팅 연결 정보 객체 |
+| transithub_routing_association.name | Body | String | - | 라우팅 연결 이름 |
+| transithub_routing_association.description | Body | String | - | 라우팅 연결 설명 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_association | Body | Object | 라우팅 연결 정보 객체 |
+| transithub_routing_association.id | Body | UUID | 라우팅 연결 ID |
+| transithub_routing_association.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_association.name | Body | String | 라우팅 연결 이름 |
+| transithub_routing_association.description | Body | String | 라우팅 연결 설명 |
+| transithub_routing_association.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_association.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 테이블 삭제하기
+
+```
+DELETE /v2.0/gateways/transithub_routing_associations/{routingAssociationId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| routingAssociationId | URL | UUID | O | 라우팅 연결 ID |
+
+
+#### 응답
+이 API는 응답 본문을 반환하지 않습니다.
