@@ -1213,3 +1213,158 @@ X-Auth-Token: {tokenId}
 
 
 
+
+
+
+
+
+
+
+
+
+## 멀티캐스트 도메인
+
+### 멀티캐스트 도메인 보기
+
+```
+GET /v2.0/gateways/transithub_multicast_domains/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| id | Query | UUID | - | 조회할 라우팅 룰 ID |
+| name | Query | String | - | 조회할 라우팅 룰 이름 |
+| transithub_id | Query | UUID | - | 조회할 트랜짓 허브 ID |
+
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_multicast_domains | Body | Array | 멀티캐스트 도메인 정보 객체 목록 |
+| transithub_multicast_domains.id | Body | UUID | 멀티캐스트 도메인 ID |
+| transithub_multicast_domains.tenant_id | Body | String | 테넌트 ID |
+| transithub_multicast_domains.name | Body | String | 멀티캐스트 도메인 이름 |
+| transithub_multicast_domains.description | Body | String | 멀티캐스트 도메인 설명 |
+| transithub_multicast_domains.transithub_id | Body | UUID | 트랜짓 허브 ID |
+
+<details><summary>예시</summary>
+  
+```json
+
+```
+</details>
+
+---
+### 멀티캐스트 도메인 생성하기
+
+```
+POST /v2.0/gateways/transithub_multicast_domains/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| transithub_multicast_domain | Body | Object | O | 멀티캐스트 도메인 정보 객체 |
+| transithub_multicast_domain.name | Body | String | - | 멀티캐스트 도메인 이름 |
+| transithub_multicast_domain.description | Body | String | - | 멀티캐스트 도메인 설명 |
+| transithub_multicast_domain.transithub_id | Body | UUID | O | 멀티캐스트 도메인을 등록할 트랜짓 허브 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_multicast_domain | Body | Array | 멀티캐스트 도메인 정보 객체 목록 |
+| transithub_multicast_domain.id | Body | UUID | 멀티캐스트 도메인 ID |
+| transithub_multicast_domain.tenant_id | Body | String | 테넌트 ID |
+| transithub_multicast_domain.name | Body | String | 멀티캐스트 도메인 이름 |
+| transithub_multicast_domain.description | Body | String | 멀티캐스트 도메인 설명 |
+| transithub_multicast_domain.transithub_id | Body | UUID | 트랜짓 허브 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+
+---
+### 멀티캐스트 도메인 수정하기
+
+```
+POST /v2.0/gateways/transithub_multicast_domains/{multicastDomainId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| multicastDomainId | URL | UUID | O | 멀티캐스트 도메인 ID |
+| transithub_multicast_domain | Body | Object | O | 멀티캐스트 도메인 정보 객체 |
+| transithub_multicast_domain.name | Body | String | - | 멀티캐스트 도메인 이름 |
+| transithub_multicast_domain.description | Body | String | - | 멀티캐스트 도메인 설명 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_multicast_domain | Body | Array | 멀티캐스트 도메인 정보 객체 목록 |
+| transithub_multicast_domain.id | Body | UUID | 멀티캐스트 도메인 ID |
+| transithub_multicast_domain.tenant_id | Body | String | 테넌트 ID |
+| transithub_multicast_domain.name | Body | String | 멀티캐스트 도메인 이름 |
+| transithub_multicast_domain.description | Body | String | 멀티캐스트 도메인 설명 |
+| transithub_multicast_domain.transithub_id | Body | UUID | 트랜짓 허브 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+
+---
+### 멀티캐스트 도메인 삭제하기
+
+```
+DELETE /v2.0/gateways/transithub_multicast_domains/{multicastDomainId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| multicastDomainId | URL | UUID | O | 멀티캐스트 도메인 ID |
+
+
+#### 응답
+이 API는 응답 본문을 반환하지 않습니다.
+
