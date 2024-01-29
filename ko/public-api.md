@@ -210,6 +210,7 @@ X-Auth-Token: {tokenId}
 
 
 
+
 ## 연결
 
 ### 연결 목록 보기
@@ -409,6 +410,197 @@ X-Auth-Token: {tokenId}
 #### 응답
 이 API는 응답 본문을 반환하지 않습니다.
 
+
+
+
+
+
+
+
+
+
+## 라우팅 테이블
+
+### 라우팅 테이블 목록 보기
+
+```
+GET /v2.0/gateways/transithub_routing_tables/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| id | Query | UUID | - | 조회할 라우팅 테이블 ID |
+| name | Query | String | - | 조회할 라우팅 테이블 이름 |
+| transithub_id | Query | UUID | - | 조회할 트랜짓 허브 ID |
+
+
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_tables | Body | Array | 라우팅 테이블 정보 객체 목록 |
+| transithub_routing_tables.id | Body | UUID | 라우팅 테이블 ID |
+| transithub_routing_tables.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_tables.name | Body | String | 라우팅 테이블 이름 |
+| transithub_routing_tables.description | Body | String | 라우팅 테이블 설명 |
+| transithub_routing_tables.transithub_id | Body | UUID | 트랜짓 허브 ID |
+| transithub_routing_tables.default_table | Body | Boolean | 기본 라우팅 테이블 여부 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 테이블 보기
+
+```
+GET /v2.0/gateways/transithub_routing_tables/{routingtableId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| routingtableId | URL | UUID | O | 라우팅 테이블 ID |
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_table | Body | Object | 라우팅 테이블 정보 객체 |
+| transithub_routing_table.id | Body | UUID | 라우팅 테이블 ID |
+| transithub_routing_table.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_table.name | Body | String | 라우팅 테이블 이름 |
+| transithub_routing_table.description | Body | String | 라우팅 테이블 설명 |
+| transithub_routing_table.transithub_id | Body | UUID | 트랜짓 허브 ID |
+| transithub_routing_table.default_table | Body | Boolean | 기본 라우팅 테이블 여부 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 테이블 생성하기
+
+```
+POST /v2.0/gateways/transithub_routing_tables/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| transithub_routing_table | Body | Object | O | 라우팅 테이블 정보 객체 |
+| transithub_routing_table.name | Body | String | - | 라우팅 테이블 이름 |
+| transithub_routing_table.description | Body | String | - | 라우팅 테이블 설명 |
+| transithub_routing_table.transithub_id | Body | UUID | O | 트랜짓 허브 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_table | Body | Object | 라우팅 테이블 정보 객체 |
+| transithub_routing_table.id | Body | UUID | 라우팅 테이블 ID |
+| transithub_routing_table.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_table.name | Body | String | 라우팅 테이블 이름 |
+| transithub_routing_table.description | Body | String | 라우팅 테이블 설명 |
+| transithub_routing_table.transithub_id | Body | UUID | 트랜짓 허브 ID |
+| transithub_routing_table.default_table | Body | Boolean | 기본 라우팅 테이블 여부 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 테이블 수정하기
+
+```
+PUT /v2.0/gateways/transithub_routing_tables/{routingtableId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| transithub_routing_table | Body | Object | O | 라우팅 테이블 정보 객체 |
+| transithub_routing_table.name | Body | String | - | 라우팅 테이블 이름 |
+| transithub_routing_table.description | Body | String | - | 라우팅 테이블 설명 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_routing_table | Body | Object | 라우팅 테이블 정보 객체 |
+| transithub_routing_table.id | Body | UUID | 라우팅 테이블 ID |
+| transithub_routing_table.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_table.name | Body | String | 라우팅 테이블 이름 |
+| transithub_routing_table.description | Body | String | 라우팅 테이블 설명 |
+| transithub_routing_table.transithub_id | Body | UUID | 트랜짓 허브 ID |
+| transithub_routing_table.default_table | Body | Boolean | 기본 라우팅 테이블 여부 |
+
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+---
+### 라우팅 테이블 삭제하기
+
+```
+DELETE /v2.0/gateways/transithub_routing_tables/{routingtableId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| routingtableId | URL | UUID | O | 라우팅 테이블 ID |
+
+
+#### 응답
+이 API는 응답 본문을 반환하지 않습니다.
 
 
 
