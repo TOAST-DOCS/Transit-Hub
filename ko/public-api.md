@@ -228,8 +228,7 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | O | 토큰 ID |
 | id | Query | UUID | - | 조회할 연결 ID |
 | name | Query | String | - | 조회할 연결 이름 |
-| resource_id | Query | UUID | - | 조회할 리소스 ID |
-| resource_type | Query | UUID | - | 조회활 리소스 타입, 현재 `VPC` 타입만 조회 가능 |
+| resource_id | Query | UUID | - | 조회할 리소스 ID (VPC) |
 | subnet_id | Query | UUID | - | 조회할 서브넷 ID |
 | transithub_id | Query | UUID | - | 조회할 트랜짓 허브 ID |
 
@@ -244,8 +243,7 @@ X-Auth-Token: {tokenId}
 | transithub_attachments.tenant_id | Body | String | 테넌트 ID |
 | transithub_attachments.name | Body | String | 연결 이름 |
 | transithub_attachments.description | Body | String | 연결 설명 |
-| transithub_attachments.resource_id | Body | UUID | 리소스 ID |
-| transithub_attachments.resource_type | Body | UUID | 리소스 타입 |
+| transithub_attachments.resource_id | Body | UUID | 리소스 ID (VPC) |
 | transithub_attachments.subnet_id | Body | UUID | 서브넷 ID |
 | transithub_attachments.transithub_id | Body | UUID | 트랜짓 허브 ID |
 
@@ -281,8 +279,7 @@ X-Auth-Token: {tokenId}
 | transithub_attachment.tenant_id | Body | String | 테넌트 ID |
 | transithub_attachment.name | Body | String | 연결 이름 |
 | transithub_attachment.description | Body | String | 연결 설명 |
-| transithub_attachment.resource_id | Body | UUID | 리소스 ID |
-| transithub_attachment.resource_type | Body | UUID | 리소스 타입 |
+| transithub_attachment.resource_id | Body | UUID | 리소스 ID (VPC) |
 | transithub_attachment.subnet_id | Body | UUID | 서브넷 ID |
 | transithub_attachment.transithub_id | Body | UUID | 트랜짓 허브 ID |
 
@@ -309,8 +306,7 @@ X-Auth-Token: {tokenId}
 | transithub_attachment | Body | Object | O | 로드 밸런서 정보 객체 |
 | transithub_attachment.name | Body | String | - | 연결 이름 |
 | transithub_attachment.description | Body | String | - | 연결 설명 |
-| transithub_attachment.resource_id | Body | UUID | O | 리소스 ID |
-| transithub_attachment.resource_type | Body | UUID | O | 리소스 타입, 현재 `VPC` 타입만 입력 가능 |
+| transithub_attachment.resource_id | Body | UUID | O | 리소스 ID (VPC) |
 | transithub_attachment.subnet_id | Body | UUID | O | 서브넷 ID |
 | transithub_attachment.transithub_id | Body | UUID | O | 연결이 등록될 트랜짓 허브 ID |
 
@@ -330,8 +326,7 @@ X-Auth-Token: {tokenId}
 | transithub_attachment.tenant_id | Body | String | 테넌트 ID |
 | transithub_attachment.name | Body | String | 연결 이름 |
 | transithub_attachment.description | Body | String | 연결 설명 |
-| transithub_attachment.resource_id | Body | UUID | 리소스 ID |
-| transithub_attachment.resource_type | Body | UUID | 리소스 타입 |
+| transithub_attachment.resource_id | Body | UUID | 리소스 ID (VPC) |
 | transithub_attachment.subnet_id | Body | UUID | 서브넷 ID |
 | transithub_attachment.transithub_id | Body | UUID | 트랜짓 허브 ID |
 
@@ -377,8 +372,7 @@ X-Auth-Token: {tokenId}
 | transithub_attachment.tenant_id | Body | String | 테넌트 ID |
 | transithub_attachment.name | Body | String | 연결 이름 |
 | transithub_attachment.description | Body | String | 연결 설명 |
-| transithub_attachment.resource_id | Body | UUID | 리소스 ID |
-| transithub_attachment.resource_type | Body | UUID | 리소스 타입 |
+| transithub_attachment.resource_id | Body | UUID | 리소스 ID (VPC) |
 | transithub_attachment.subnet_id | Body | UUID | 서브넷 ID |
 | transithub_attachment.transithub_id | Body | UUID | 트랜짓 허브 ID |
 
