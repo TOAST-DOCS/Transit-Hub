@@ -780,7 +780,7 @@ X-Auth-Token: {tokenId}
 </details>
 
 ---
-### 라우팅 테이블 삭제하기
+### 라우팅 연결 삭제하기
 
 ```
 DELETE /v2.0/gateways/transithub_routing_associations/{routingAssociationId}
@@ -915,13 +915,13 @@ X-Auth-Token: {tokenId}
 
 | 이름 | 종류 | 형식 | 설명 |
 |---|---|---|---|
-| transithub_routing_association | Body | Object | 라우팅 연결 정보 객체 |
-| transithub_routing_association.id | Body | UUID | 라우팅 연결 ID |
-| transithub_routing_association.tenant_id | Body | String | 테넌트 ID |
-| transithub_routing_association.name | Body | String | 라우팅 연결 이름 |
-| transithub_routing_association.description | Body | String | 라우팅 연결 설명 |
-| transithub_routing_association.attachment_id | Body | UUID | 연결 ID |
-| transithub_routing_association.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+| transithub_routing_propagation | Body | Object | 라우팅 전파 정보 객체 |
+| transithub_routing_propagation.id | Body | UUID | 라우팅 전파 ID |
+| transithub_routing_propagation.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_propagation.name | Body | String | 라우팅 전파 이름 |
+| transithub_routing_propagation.description | Body | String | 라우팅 전파 설명 |
+| transithub_routing_propagation.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_propagation.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 
 <details><summary>예시</summary>
 
@@ -931,10 +931,10 @@ X-Auth-Token: {tokenId}
 </details>
 
 ---
-### 라우팅 연결 수정하기
+### 라우팅 전파 수정하기
 
 ```
-PUT /v2.0/gateways/transithub_routing_associations/{routingAssociationId}
+PUT /v2.0/gateways/transithub_routing_propagations/{routingPropagationId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -943,10 +943,10 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 필수 | 설명 |
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
-| routingAssociationId | URL | UUID | O | 라우팅 연결 ID |
-| transithub_routing_association | Body | Object | O | 라우팅 연결 정보 객체 |
-| transithub_routing_association.name | Body | String | - | 라우팅 연결 이름 |
-| transithub_routing_association.description | Body | String | - | 라우팅 연결 설명 |
+| routingPropagationId | URL | UUID | O | 라우팅 전파 ID |
+| transithub_routing_propagation | Body | Object | O | 라우팅 전파 정보 객체 |
+| transithub_routing_propagation.name | Body | String | - | 라우팅 전파 이름 |
+| transithub_routing_propagation.description | Body | String | - | 라우팅 전파 설명 |
 
 <details><summary>예시</summary>
 
@@ -959,13 +959,13 @@ X-Auth-Token: {tokenId}
 
 | 이름 | 종류 | 형식 | 설명 |
 |---|---|---|---|
-| transithub_routing_association | Body | Object | 라우팅 연결 정보 객체 |
-| transithub_routing_association.id | Body | UUID | 라우팅 연결 ID |
-| transithub_routing_association.tenant_id | Body | String | 테넌트 ID |
-| transithub_routing_association.name | Body | String | 라우팅 연결 이름 |
-| transithub_routing_association.description | Body | String | 라우팅 연결 설명 |
-| transithub_routing_association.attachment_id | Body | UUID | 연결 ID |
-| transithub_routing_association.routing_table_id | Body | UUID | 라우팅 테이블 ID |
+| transithub_routing_propagation | Body | Object | 라우팅 전파 정보 객체 |
+| transithub_routing_propagation.id | Body | UUID | 라우팅 전파 ID |
+| transithub_routing_propagation.tenant_id | Body | String | 테넌트 ID |
+| transithub_routing_propagation.name | Body | String | 라우팅 전파 이름 |
+| transithub_routing_propagation.description | Body | String | 라우팅 전파 설명 |
+| transithub_routing_propagation.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_propagation.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 
 
 <details><summary>예시</summary>
@@ -976,10 +976,10 @@ X-Auth-Token: {tokenId}
 </details>
 
 ---
-### 라우팅 테이블 삭제하기
+### 라우팅 전파 삭제하기
 
 ```
-DELETE /v2.0/gateways/transithub_routing_associations/{routingAssociationId}
+DELETE /v2.0/gateways/transithub_routing_propagations/{routingPropagationId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -989,8 +989,17 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 필수 | 설명 |
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
-| routingAssociationId | URL | UUID | O | 라우팅 연결 ID |
+| routingPropagationId | URL | UUID | O | 라우팅 전파 ID |
 
 
 #### 응답
 이 API는 응답 본문을 반환하지 않습니다.
+
+
+
+
+
+
+
+
+
