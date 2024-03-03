@@ -638,7 +638,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_associations.tenant_id | Body | String | 테넌트 ID |
 | transithub_routing_associations.name | Body | String | 라우팅 연결 이름 |
 | transithub_routing_associations.description | Body | String | 라우팅 연결 설명 |
-| transithub_routing_associations.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_associations.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_associations.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 
 <details><summary>예시</summary>
@@ -673,7 +673,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_association.tenant_id | Body | String | 테넌트 ID |
 | transithub_routing_association.name | Body | String | 라우팅 연결 이름 |
 | transithub_routing_association.description | Body | String | 라우팅 연결 설명 |
-| transithub_routing_association.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_association.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_association.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 
 <details><summary>예시</summary>
@@ -699,7 +699,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_association | Body | Object | O | 라우팅 연결 정보 객체 |
 | transithub_routing_association.name | Body | String | - | 라우팅 연결 이름 |
 | transithub_routing_association.description | Body | String | - | 라우팅 연결 설명 |
-| transithub_routing_association.attachment_id | Body | UUID | O | 라우팅 연결 대상 연결(Attachment) ID |
+| transithub_routing_association.attachment_id | Body | UUID | O | 연결(Attachment) ID |
 | transithub_routing_association.routing_table_id | Body | UUID | O | 라우팅 연결이 등록될 라우팅 테이블 ID |
 
 <details><summary>예시</summary>
@@ -718,7 +718,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_association.tenant_id | Body | String | 테넌트 ID |
 | transithub_routing_association.name | Body | String | 라우팅 연결 이름 |
 | transithub_routing_association.description | Body | String | 라우팅 연결 설명 |
-| transithub_routing_association.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_association.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_association.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 
 <details><summary>예시</summary>
@@ -762,7 +762,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_association.tenant_id | Body | String | 테넌트 ID |
 | transithub_routing_association.name | Body | String | 라우팅 연결 이름 |
 | transithub_routing_association.description | Body | String | 라우팅 연결 설명 |
-| transithub_routing_association.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_association.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_association.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 
 
@@ -834,7 +834,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_propagations.tenant_id | Body | String | 테넌트 ID |
 | transithub_routing_propagations.name | Body | String | 라우팅 전파 이름 |
 | transithub_routing_propagations.description | Body | String | 라우팅 전파 설명 |
-| transithub_routing_propagations.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_propagations.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_propagations.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 
 <details><summary>예시</summary>
@@ -869,7 +869,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_propagation.tenant_id | Body | String | 테넌트 ID |
 | transithub_routing_propagation.name | Body | String | 라우팅 전파 이름 |
 | transithub_routing_propagation.description | Body | String | 라우팅 전파 설명 |
-| transithub_routing_propagation.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_propagation.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_propagation.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 
 <details><summary>예시</summary>
@@ -895,7 +895,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_propagation | Body | Object | O | 라우팅 전파 정보 객체 |
 | transithub_routing_propagation.name | Body | String | - | 라우팅 전파 이름 |
 | transithub_routing_propagation.description | Body | String | - | 라우팅 전파 설명 |
-| transithub_routing_propagation.attachment_id | Body | UUID | O | 라우팅 전파 대상 연결(Attachment) ID |
+| transithub_routing_propagation.attachment_id | Body | UUID | O | 연결(Attachment) ID |
 | transithub_routing_propagation.routing_table_id | Body | UUID | O | 라우팅 전파가 등록될 라우팅 테이블 ID |
 
 <details><summary>예시</summary>
@@ -914,7 +914,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_propagation.tenant_id | Body | String | 테넌트 ID |
 | transithub_routing_propagation.name | Body | String | 라우팅 전파 이름 |
 | transithub_routing_propagation.description | Body | String | 라우팅 전파 설명 |
-| transithub_routing_propagation.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_propagation.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_propagation.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 
 <details><summary>예시</summary>
@@ -958,7 +958,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_propagation.tenant_id | Body | String | 테넌트 ID |
 | transithub_routing_propagation.name | Body | String | 라우팅 전파 이름 |
 | transithub_routing_propagation.description | Body | String | 라우팅 전파 설명 |
-| transithub_routing_propagation.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_propagation.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_propagation.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 
 
@@ -1018,7 +1018,7 @@ X-Auth-Token: {tokenId}
 | name | Query | String | - | 조회할 라우팅 룰 이름 |
 | action | Query | Enum | - | 조회할 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
 | rule_type | Query | Enum | - | 조회할 라우팅 룰 타입<br>`STATIC`, `PROPAGATED` 중 하나 |
-| attachment_id | Query | UUID | - | 조회할 연결 ID |
+| attachment_id | Query | UUID | - | 조회할 연결(Attachment) ID |
 | routing_table_id | Query | UUID | - | 조회할 라우팅 테이블 ID |
 
 
@@ -1035,7 +1035,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_rules.cidr | Body | String | 라우팅 룰 IP 대역 |
 | transithub_routing_rules.action | Body | Enum | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
 | transithub_routing_rules.rule_type | Body | Enum | 라우팅 룰 타입<br>`STATIC`, `PROPAGATED` 중 하나 |
-| transithub_routing_rules.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_rules.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_rules.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 | transithub_routing_rules.propagation_id | Body | UUID | 라우팅 전파 ID, 전파에 의해 라우팅 타입이 `PROPAGATED`인 경우 사용 |
 
@@ -1074,7 +1074,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_rule.cidr | Body | String | 라우팅 룰 IP 대역 |
 | transithub_routing_rule.action | Body | Enum | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
 | transithub_routing_rule.rule_type | Body | Enum | 라우팅 룰 타입<br>`STATIC`, `PROPAGATED` 중 하나 |
-| transithub_routing_rule.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_rule.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_rule.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 | transithub_routing_rule.propagation_id | Body | UUID | 라우팅 전파 ID, 전파에 의해 라우팅 타입이 `PROPAGATED`인 경우 사용 |
 
@@ -1103,7 +1103,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_rule.description | Body | String | - | 라우팅 룰 설명 |
 | transithub_routing_rule.cidr | Body | String | O | 라우팅 룰 IP 대역 |
 | transithub_routing_rule.action | Body | Enum | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
-| transithub_routing_rule.attachment_id | Body | UUID | 송신 대상 연결(Attachment) ID |
+| transithub_routing_rule.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_rule.routing_table_id | Body | UUID | 라우팅 룰이 등록될 라우팅 테이블 ID |
 
 <details><summary>예시</summary>
@@ -1125,7 +1125,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_rule.cidr | Body | String | 라우팅 룰 IP 대역 |
 | transithub_routing_rule.action | Body | Enum | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
 | transithub_routing_rule.rule_type | Body | Enum | 라우팅 룰 타입<br>`STATIC`, `PROPAGATED` 중 하나 |
-| transithub_routing_rule.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_rule.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_rule.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 | transithub_routing_rule.propagation_id | Body | UUID | 라우팅 전파 ID, 전파에 의해 라우팅 타입이 `PROPAGATED`인 경우 사용 |
 
@@ -1173,7 +1173,7 @@ X-Auth-Token: {tokenId}
 | transithub_routing_rule.cidr | Body | String | 라우팅 룰 IP 대역 |
 | transithub_routing_rule.action | Body | Enum | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
 | transithub_routing_rule.rule_type | Body | Enum | 라우팅 룰 타입<br>`STATIC`, `PROPAGATED` 중 하나 |
-| transithub_routing_rule.attachment_id | Body | UUID | 연결 ID |
+| transithub_routing_rule.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_routing_rule.routing_table_id | Body | UUID | 라우팅 테이블 ID |
 | transithub_routing_rule.propagation_id | Body | UUID | 라우팅 전파 ID, 전파에 의해 라우팅 타입이 `PROPAGATED`인 경우 사용 |
 
@@ -1231,8 +1231,8 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 필수 | 설명 |
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
-| id | Query | UUID | - | 조회할 라우팅 룰 ID |
-| name | Query | String | - | 조회할 라우팅 룰 이름 |
+| id | Query | UUID | - | 조회할 멀티캐스트 도메인 ID |
+| name | Query | String | - | 조회할 멀티캐스트 도메인 이름 |
 | transithub_id | Query | UUID | - | 조회할 트랜짓 허브 ID |
 
 
@@ -1283,7 +1283,7 @@ X-Auth-Token: {tokenId}
 
 | 이름 | 종류 | 형식 | 설명 |
 |---|---|---|---|
-| transithub_multicast_domain | Body | Array | 멀티캐스트 도메인 정보 객체 목록 |
+| transithub_multicast_domain | Body | Object | 멀티캐스트 도메인 정보 객체 |
 | transithub_multicast_domain.id | Body | UUID | 멀티캐스트 도메인 ID |
 | transithub_multicast_domain.tenant_id | Body | String | 테넌트 ID |
 | transithub_multicast_domain.name | Body | String | 멀티캐스트 도메인 이름 |
@@ -1327,7 +1327,7 @@ X-Auth-Token: {tokenId}
 
 | 이름 | 종류 | 형식 | 설명 |
 |---|---|---|---|
-| transithub_multicast_domain | Body | Array | 멀티캐스트 도메인 정보 객체 목록 |
+| transithub_multicast_domain | Body | Object | 멀티캐스트 도메인 정보 객체 |
 | transithub_multicast_domain.id | Body | UUID | 멀티캐스트 도메인 ID |
 | transithub_multicast_domain.tenant_id | Body | String | 테넌트 ID |
 | transithub_multicast_domain.name | Body | String | 멀티캐스트 도메인 이름 |
@@ -1362,3 +1362,295 @@ X-Auth-Token: {tokenId}
 #### 응답
 이 API는 응답 본문을 반환하지 않습니다.
 
+
+
+
+
+
+
+
+
+## 멀티캐스트 연결
+
+### 멀티캐스트 연결 보기
+
+```
+GET /v2.0/gateways/transithub_multicast_associations/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| id | Query | UUID | - | 조회할 멀티캐스트 연결 ID |
+| name | Query | String | - | 조회할 멀티캐스트 연결 이름 |
+| domain_id | Query | UUID | - | 조회할 멀티캐스트 도메인 ID |
+
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_multicast_associations | Body | Array | 멀티캐스트 연결 정보 객체 목록 |
+| transithub_multicast_associations.id | Body | UUID | 멀티캐스트 연결 ID |
+| transithub_multicast_associations.tenant_id | Body | String | 테넌트 ID |
+| transithub_multicast_associations.name | Body | String | 멀티캐스트 연결 이름 |
+| transithub_multicast_associations.description | Body | String | 멀티캐스트 연결 설명 |
+| transithub_multicast_associations.attachment_id | Body | UUID | 연결(Attachment) ID |
+| transithub_multicast_associations.subnet_id | Body | UUID | 서브넷 ID |
+| transithub_multicast_associations.domain_id | Body | UUID | 멀티캐스트 도메인 ID |
+
+<details><summary>예시</summary>
+  
+```json
+
+```
+</details>
+
+---
+### 멀티캐스트 연결 생성하기
+
+```
+POST /v2.0/gateways/transithub_multicast_associations/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| transithub_multicast_association | Body | Object | O | 멀티캐스트 연결 정보 객체 |
+| transithub_multicast_association.name | Body | String | - | 멀티캐스트 연결 이름 |
+| transithub_multicast_association.description | Body | String | - | 멀티캐스트 연결 설명 |
+| transithub_multicast_association.attachment_id | Body | UUID | O | 연결(Attachment) ID |
+| transithub_multicast_association.domain_id | Body | UUID | O | 멀티캐스트 도메인 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_multicast_association | Body | Object | 멀티캐스트 연결 정보 객체 |
+| transithub_multicast_association.id | Body | UUID | 멀티캐스트 연결 ID |
+| transithub_multicast_association.tenant_id | Body | String | 테넌트 ID |
+| transithub_multicast_association.name | Body | String | 멀티캐스트 연결 이름 |
+| transithub_multicast_association.description | Body | String | 멀티캐스트 연결 설명 |
+| transithub_multicast_association.attachment_id | Body | UUID | 연결(Attachment) ID |
+| transithub_multicast_association.subnet_id | Body | UUID | 서브넷 ID |
+| transithub_multicast_association.domain_id | Body | UUID | 멀티캐스트 도메인 ID |
+
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+
+---
+### 멀티캐스트 연결 수정하기
+
+```
+POST /v2.0/gateways/transithub_multicast_associations/{multicastAssociationId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| multicastAssociationId | URL | UUID | O | 멀티캐스트 연결 ID |
+| transithub_multicast_association | Body | Object | O | 멀티캐스트 연결 정보 객체 |
+| transithub_multicast_association.name | Body | String | - | 멀티캐스트 연결 이름 |
+| transithub_multicast_association.description | Body | String | - | 멀티캐스트 연결 설명 |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_multicast_association | Body | Object | 멀티캐스트 연결 정보 객체 |
+| transithub_multicast_association.id | Body | UUID | 멀티캐스트 연결 ID |
+| transithub_multicast_association.tenant_id | Body | String | 테넌트 ID |
+| transithub_multicast_association.name | Body | String | 멀티캐스트 연결 이름 |
+| transithub_multicast_association.description | Body | String | 멀티캐스트 연결 설명 |
+| transithub_multicast_association.attachment_id | Body | UUID | 연결(Attachment) ID |
+| transithub_multicast_association.subnet_id | Body | UUID | 서브넷 ID |
+| transithub_multicast_association.domain_id | Body | UUID | 멀티캐스트 도메인 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+
+---
+### 멀티캐스트 연결 삭제하기
+
+```
+DELETE /v2.0/gateways/transithub_multicast_associations/{multicastAssociationId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| multicastAssociationId | URL | UUID | O | 멀티캐스트 연결 ID |
+
+
+#### 응답
+이 API는 응답 본문을 반환하지 않습니다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 멀티캐스트 그룹
+
+### 멀티캐스트 그룹 보기
+
+```
+GET /v2.0/gateways/transithub_multicast_groups/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| id | Query | UUID | - | 조회할 멀티캐스트 그룹 ID |
+| name | Query | String | - | 조회할 멀티캐스트 그룹 이름 |
+| domain_id | Query | UUID | - | 조회할 멀티캐스트 그룹 ID |
+
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_multicast_groups | Body | Array | 멀티캐스트 그룹 정보 객체 목록 |
+| transithub_multicast_groups.id | Body | UUID | 멀티캐스트 그룹 ID |
+| transithub_multicast_groups.tenant_id | Body | String | 테넌트 ID |
+| transithub_multicast_groups.name | Body | String | 멀티캐스트 그룹 이름 |
+| transithub_multicast_groups.description | Body | String | 멀티캐스트 그룹 설명 |
+| transithub_multicast_groups.association_id | Body | UUID | 멀티캐스트 연결 ID |
+| transithub_multicast_groups.ipaddress | Body | UUID | 멀티캐스트 그룹 IP 주소 |
+| transithub_multicast_groups.member_type | Body | String | 멀티캐스트 멤버 타입 |
+| transithub_multicast_groups.source_type | Body | String | 멀티캐스트 소스 타입 |
+| transithub_multicast_groups.port_id | Body | UUID | 멀티캐스트 대상 포트 ID |
+
+<details><summary>예시</summary>
+  
+```json
+
+```
+</details>
+
+---
+### 멀티캐스트 그룹 생성하기
+
+```
+POST /v2.0/gateways/transithub_multicast_groups/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| transithub_multicast_group | Body | Object | O | 멀티캐스트 그룹 정보 객체 |
+| transithub_multicast_group.name | Body | String | - | 멀티캐스트 그룹 이름 |
+| transithub_multicast_group.description | Body | String | - | 멀티캐스트 그룹 설명 |
+| transithub_multicast_group.association_id | Body | UUID | O | 멀티캐스트 연결 ID |
+| transithub_multicast_group.ipaddress | Body | UUID | O | 멀티캐스트 그룹 IP 주소 |
+| transithub_multicast_group.member_type | Body | String | - | 멀티캐스트 멤버 타입, 멤버로 사용할 경우 `STATIC` 입력<br>멤버타입과 소스타입 중 하나 입력 필수 |
+| transithub_multicast_group.source_type | Body | String | - | 멀티캐스트 소스 타입, 소스로 사용할 경우 `STATIC` 입력<br>멤버타입과 소스타입 중 하나 입력 필수 |
+| transithub_multicast_group.port_id | Body | UUID | O | 멀티캐스트 대상 포트 ID |
+
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_multicast_group | Body | Object | 멀티캐스트 그룹 정보 객체 |
+| transithub_multicast_group.id | Body | UUID | 멀티캐스트 그룹 ID |
+| transithub_multicast_group.tenant_id | Body | String | 테넌트 ID |
+| transithub_multicast_group.name | Body | String | 멀티캐스트 그룹 이름 |
+| transithub_multicast_group.description | Body | String | 멀티캐스트 그룹 설명 |
+| transithub_multicast_group.association_id | Body | UUID | 멀티캐스트 연결 ID |
+| transithub_multicast_group.ipaddress | Body | UUID | 멀티캐스트 그룹 IP 주소 |
+| transithub_multicast_group.member_type | Body | String | 멀티캐스트 멤버 타입 |
+| transithub_multicast_group.source_type | Body | String | 멀티캐스트 소스 타입 |
+| transithub_multicast_group.port_id | Body | UUID | 멀티캐스트 대상 포트 ID |
+
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+
+---
+### 멀티캐스트 그룹 삭제하기
+
+```
+DELETE /v2.0/gateways/transithub_multicast_groups/{multicastGroupId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| multicastGroupId | URL | UUID | O | 멀티캐스트 그룹 ID |
+
+
+#### 응답
+이 API는 응답 본문을 반환하지 않습니다.
