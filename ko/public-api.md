@@ -1276,7 +1276,7 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 설명 |
 |---|---|---|---|
 | tokenId | Header | String | 토큰 ID |
-| transithub_multicast_domain | Body | Object | 멀티캐스트 도메인 정보 객체 |
+| transithub_multicast_domain | Body | Object | 멀티캐스트 도메인 정보 객체 |
 | transithub_multicast_domain.name | Body | String | 멀티캐스트 도메인 이름 |
 | transithub_multicast_domain.description | Body | String | 멀티캐스트 도메인 설명 |
 | transithub_multicast_domain.transithub_id | Body | UUID | 멀티캐스트 도메인을 등록할 트랜짓 허브 ID |
@@ -1303,7 +1303,7 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 필수 | 설명 |
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
-| transithub_multicast_domain | Body | Object | O | 멀티캐스트 도메인 정보 객체 |
+| transithub_multicast_domain | Body | Object | O | 멀티캐스트 도메인 정보 객체 |
 | transithub_multicast_domain.name | Body | String | - | 멀티캐스트 도메인 이름 |
 | transithub_multicast_domain.description | Body | String | - | 멀티캐스트 도메인 설명 |
 | transithub_multicast_domain.transithub_id | Body | UUID | O | 멀티캐스트 도메인을 등록할 트랜짓 허브 ID |
@@ -1348,7 +1348,7 @@ X-Auth-Token: {tokenId}
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
 | multicastDomainId | URL | UUID | O | 멀티캐스트 도메인 ID |
-| transithub_multicast_domain | Body | Object | O | 멀티캐스트 도메인 정보 객체 |
+| transithub_multicast_domain | Body | Object | O | 멀티캐스트 도메인 정보 객체 |
 | transithub_multicast_domain.name | Body | String | - | 멀티캐스트 도메인 이름 |
 | transithub_multicast_domain.description | Body | String | - | 멀티캐스트 도메인 설명 |
 
