@@ -1586,7 +1586,6 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_associations | Body | Array | 멀티캐스트 연결 정보 객체 목록 |
 | transithub_multicast_associations.id | Body | UUID | 멀티캐스트 연결 ID |
 | transithub_multicast_associations.tenant_id | Body | String | 테넌트 ID |
-| transithub_multicast_associations.name | Body | String | 멀티캐스트 연결 이름 |
 | transithub_multicast_associations.description | Body | String | 멀티캐스트 연결 설명 |
 | transithub_multicast_associations.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_multicast_associations.subnet_id | Body | UUID | 서브넷 ID |
@@ -1624,7 +1623,6 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_association | Body | Object | 멀티캐스트 연결 정보 객체 |
 | transithub_multicast_association.id | Body | UUID | 멀티캐스트 연결 ID |
 | transithub_multicast_association.tenant_id | Body | String | 테넌트 ID |
-| transithub_multicast_association.name | Body | String | 멀티캐스트 연결 이름 |
 | transithub_multicast_association.description | Body | String | 멀티캐스트 연결 설명 |
 | transithub_multicast_association.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_multicast_association.subnet_id | Body | UUID | 서브넷 ID |
@@ -1652,7 +1650,6 @@ X-Auth-Token: {tokenId}
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
 | transithub_multicast_association | Body | Object | O | 멀티캐스트 연결 정보 객체 |
-| transithub_multicast_association.name | Body | String | - | 멀티캐스트 연결 이름 |
 | transithub_multicast_association.description | Body | String | - | 멀티캐스트 연결 설명 |
 | transithub_multicast_association.attachment_id | Body | UUID | O | 연결(Attachment) ID |
 | transithub_multicast_association.domain_id | Body | UUID | O | 멀티캐스트 도메인 ID |
@@ -1671,7 +1668,6 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_association | Body | Object | 멀티캐스트 연결 정보 객체 |
 | transithub_multicast_association.id | Body | UUID | 멀티캐스트 연결 ID |
 | transithub_multicast_association.tenant_id | Body | String | 테넌트 ID |
-| transithub_multicast_association.name | Body | String | 멀티캐스트 연결 이름 |
 | transithub_multicast_association.description | Body | String | 멀티캐스트 연결 설명 |
 | transithub_multicast_association.attachment_id | Body | UUID | 연결(Attachment) ID |
 | transithub_multicast_association.subnet_id | Body | UUID | 서브넷 ID |
@@ -1701,7 +1697,6 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | O | 토큰 ID |
 | multicastAssociationId | URL | UUID | O | 멀티캐스트 연결 ID |
 | transithub_multicast_association | Body | Object | O | 멀티캐스트 연결 정보 객체 |
-| transithub_multicast_association.name | Body | String | - | 멀티캐스트 연결 이름 |
 | transithub_multicast_association.description | Body | String | - | 멀티캐스트 연결 설명 |
 
 <details><summary>예시</summary>
@@ -1794,7 +1789,6 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_groups | Body | Array | 멀티캐스트 그룹 정보 객체 목록 |
 | transithub_multicast_groups.id | Body | UUID | 멀티캐스트 그룹 ID |
 | transithub_multicast_groups.tenant_id | Body | String | 테넌트 ID |
-| transithub_multicast_groups.name | Body | String | 멀티캐스트 그룹 이름 |
 | transithub_multicast_groups.description | Body | String | 멀티캐스트 그룹 설명 |
 | transithub_multicast_groups.association_id | Body | UUID | 멀티캐스트 연결 ID |
 | transithub_multicast_groups.ipaddress | Body | UUID | 멀티캐스트 그룹 IP 주소 |
@@ -1832,7 +1826,6 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_group | Body | Object | 멀티캐스트 그룹 정보 객체 |
 | transithub_multicast_group.id | Body | UUID | 멀티캐스트 그룹 ID |
 | transithub_multicast_group.tenant_id | Body | String | 테넌트 ID |
-| transithub_multicast_group.name | Body | String | 멀티캐스트 그룹 이름 |
 | transithub_multicast_group.description | Body | String | 멀티캐스트 그룹 설명 |
 | transithub_multicast_group.association_id | Body | UUID | 멀티캐스트 연결 ID |
 | transithub_multicast_group.ipaddress | Body | UUID | 멀티캐스트 그룹 IP 주소 |
@@ -1861,7 +1854,6 @@ X-Auth-Token: {tokenId}
 |---|---|---|---|---|
 | tokenId | Header | String | O | 토큰 ID |
 | transithub_multicast_group | Body | Object | O | 멀티캐스트 그룹 정보 객체 |
-| transithub_multicast_group.name | Body | String | - | 멀티캐스트 그룹 이름 |
 | transithub_multicast_group.description | Body | String | - | 멀티캐스트 그룹 설명 |
 | transithub_multicast_group.association_id | Body | UUID | O | 멀티캐스트 연결 ID |
 | transithub_multicast_group.ipaddress | Body | UUID | O | 멀티캐스트 그룹 IP 주소 |
@@ -1884,7 +1876,6 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_group | Body | Object | 멀티캐스트 그룹 정보 객체 |
 | transithub_multicast_group.id | Body | UUID | 멀티캐스트 그룹 ID |
 | transithub_multicast_group.tenant_id | Body | String | 테넌트 ID |
-| transithub_multicast_group.name | Body | String | 멀티캐스트 그룹 이름 |
 | transithub_multicast_group.description | Body | String | 멀티캐스트 그룹 설명 |
 | transithub_multicast_group.association_id | Body | UUID | 멀티캐스트 연결 ID |
 | transithub_multicast_group.ipaddress | Body | UUID | 멀티캐스트 그룹 IP 주소 |
