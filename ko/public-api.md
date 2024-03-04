@@ -45,7 +45,23 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithubs": [
+    {
+      "status": "ACTIVE",
+      "description": null,
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "created_at": "2024-02-12 22:19:05",
+      "multicast_enable": true,
+      "updated_at": "2024-02-12 22:19:05",
+      "default_propagation_enable": true,
+      "default_association_enable": true,
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+      "name": "thub"
+    }
+  ]
+}
 ```
 </details>
 
@@ -81,7 +97,21 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub": {
+    "status": "ACTIVE",
+    "description": null,
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-02-12 22:19:05",
+    "multicast_enable": true,
+    "updated_at": "2024-02-12 22:19:05",
+    "default_propagation_enable": true,
+    "default_association_enable": true,
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+    "name": "thub"
+  }
+}
 ```
 </details>
 
@@ -111,7 +141,15 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub": {
+    "default_propagation_enable": true,
+    "default_association_enable": true,
+    "multicast_enable": true,
+    "name": "thub",
+    "description": "test"
+  }
+}
 ```
 </details>
 
@@ -132,7 +170,21 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub": {
+    "status": "ACTIVE",
+    "description": null,
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-02-12 22:19:05",
+    "multicast_enable": true,
+    "updated_at": "2024-02-12 22:19:05",
+    "default_propagation_enable": true,
+    "default_association_enable": true,
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+    "name": "thub"
+  }
+}
 ```
 </details>
 
@@ -157,7 +209,12 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub": {
+    "name": "thub1",
+    "description": "test1"
+  }
+}
 ```
 </details>
 
@@ -178,7 +235,21 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub": {
+    "status": "ACTIVE",
+    "description": "test1",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-02-12 22:19:05",
+    "multicast_enable": true,
+    "updated_at": "2024-03-04 01:59:00.961621",
+    "default_propagation_enable": true,
+    "default_association_enable": true,
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+    "name": "thub1"
+  }
+}
 ```
 </details>
 
@@ -1218,7 +1289,7 @@ X-Auth-Token: {tokenId}
 
 ## 멀티캐스트 도메인
 
-### 멀티캐스트 도메인 보기
+### 멀티캐스트 도메인 목록 보기
 
 ```
 GET /v2.0/gateways/transithub_multicast_domains/
@@ -1253,6 +1324,41 @@ X-Auth-Token: {tokenId}
 
 ```
 </details>
+
+---
+### 멀티캐스트 도메인 보기
+
+```
+GET /v2.0/gateways/transithub_multicast_domains/{multicastDomainId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| multicastDomainId | URL | UUID | O | 멀티캐스트 도메인 ID |
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| tokenId | Header | String | 토큰 ID |
+| transithub_multicast_domain | Body | Object | 멀티캐스트 도메인 정보 객체 |
+| transithub_multicast_domain.name | Body | String | 멀티캐스트 도메인 이름 |
+| transithub_multicast_domain.description | Body | String | 멀티캐스트 도메인 설명 |
+| transithub_multicast_domain.transithub_id | Body | UUID | 멀티캐스트 도메인을 등록할 트랜짓 허브 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
+
 
 ---
 ### 멀티캐스트 도메인 생성하기
@@ -1372,7 +1478,7 @@ X-Auth-Token: {tokenId}
 
 ## 멀티캐스트 연결
 
-### 멀티캐스트 연결 보기
+### 멀티캐스트 연결 목록 보기
 
 ```
 GET /v2.0/gateways/transithub_multicast_associations/
@@ -1409,6 +1515,45 @@ X-Auth-Token: {tokenId}
 
 ```
 </details>
+
+
+---
+### 멀티캐스트 연결 보기
+
+```
+GET /v2.0/gateways/transithub_multicast_domains/{multicastAssociationId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| multicastAssociationId | URL | UUID | O | 라우팅 룰 ID |
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| tokenId | Header | String | 토큰 ID |
+| transithub_multicast_association | Body | Object | 멀티캐스트 연결 정보 객체 |
+| transithub_multicast_association.id | Body | UUID | 멀티캐스트 연결 ID |
+| transithub_multicast_association.tenant_id | Body | String | 테넌트 ID |
+| transithub_multicast_association.name | Body | String | 멀티캐스트 연결 이름 |
+| transithub_multicast_association.description | Body | String | 멀티캐스트 연결 설명 |
+| transithub_multicast_association.attachment_id | Body | UUID | 연결(Attachment) ID |
+| transithub_multicast_association.subnet_id | Body | UUID | 서브넷 ID |
+| transithub_multicast_association.domain_id | Body | UUID | 멀티캐스트 도메인 ID |
+
+<details><summary>예시</summary>
+
+```json
+
+```
+</details>
+
 
 ---
 ### 멀티캐스트 연결 생성하기
@@ -1541,7 +1686,7 @@ X-Auth-Token: {tokenId}
 
 ## 멀티캐스트 그룹
 
-### 멀티캐스트 그룹 보기
+### 멀티캐스트 그룹 목록 보기
 
 ```
 GET /v2.0/gateways/transithub_multicast_groups/
@@ -1576,6 +1721,44 @@ X-Auth-Token: {tokenId}
 
 <details><summary>예시</summary>
   
+```json
+
+```
+</details>
+
+---
+### 멀티캐스트 그룹 보기
+
+```
+GET /v2.0/gateways/transithub_multicast_groups/{multicastGroupId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| multicastGroupId | URL | UUID | O | 멀티캐스트 그룹 ID |
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_multicast_group | Body | Object | 멀티캐스트 그룹 정보 객체 |
+| transithub_multicast_group.id | Body | UUID | 멀티캐스트 그룹 ID |
+| transithub_multicast_group.tenant_id | Body | String | 테넌트 ID |
+| transithub_multicast_group.name | Body | String | 멀티캐스트 그룹 이름 |
+| transithub_multicast_group.description | Body | String | 멀티캐스트 그룹 설명 |
+| transithub_multicast_group.association_id | Body | UUID | 멀티캐스트 연결 ID |
+| transithub_multicast_group.ipaddress | Body | UUID | 멀티캐스트 그룹 IP 주소 |
+| transithub_multicast_group.member_type | Body | String | 멀티캐스트 멤버 타입 |
+| transithub_multicast_group.source_type | Body | String | 멀티캐스트 소스 타입 |
+| transithub_multicast_group.port_id | Body | UUID | 멀티캐스트 대상 포트 ID |
+
+<details><summary>예시</summary>
+
 ```json
 
 ```
