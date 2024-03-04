@@ -1528,52 +1528,6 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-
----
-### 멀티캐스트 연결 수정하기
-
-```
-POST /v2.0/gateways/transithub_multicast_associations/{multicastAssociationId}
-X-Auth-Token: {tokenId}
-```
-
-#### 요청
-
-| 이름 | 종류 | 형식 | 필수 | 설명 |
-|---|---|---|---|---|
-| tokenId | Header | String | O | 토큰 ID |
-| multicastAssociationId | URL | UUID | O | 멀티캐스트 연결 ID |
-| transithub_multicast_association | Body | Object | O | 멀티캐스트 연결 정보 객체 |
-| transithub_multicast_association.description | Body | String | - | 멀티캐스트 연결 설명 |
-
-<details><summary>예시</summary>
-
-```json
-
-```
-</details>
-
-#### 응답
-
-| 이름 | 종류 | 형식 | 설명 |
-|---|---|---|---|
-| transithub_multicast_association | Body | Object | 멀티캐스트 연결 정보 객체 |
-| transithub_multicast_association.id | Body | UUID | 멀티캐스트 연결 ID |
-| transithub_multicast_association.tenant_id | Body | String | 테넌트 ID |
-| transithub_multicast_association.name | Body | String | 멀티캐스트 연결 이름 |
-| transithub_multicast_association.description | Body | String | 멀티캐스트 연결 설명 |
-| transithub_multicast_association.attachment_id | Body | UUID | 연결(Attachment) ID |
-| transithub_multicast_association.subnet_id | Body | UUID | 서브넷 ID |
-| transithub_multicast_association.domain_id | Body | UUID | 멀티캐스트 도메인 ID |
-
-<details><summary>예시</summary>
-
-```json
-
-```
-</details>
-
-
 ---
 ### 멀티캐스트 연결 삭제하기
 
