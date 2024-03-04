@@ -321,7 +321,26 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_attachments": [
+    {
+      "status": "ACTIVE",
+      "remote": false,
+      "name": "thub-attachment",
+      "resource_id": "8eabc2c1-78a2-41e2-b03d-c1021042701f",
+      "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "created_at": "2024-02-13 01:22:09",
+      "updated_at": "2024-02-13 01:22:11",
+      "resource_cidr": "172.16.0.0/12",
+      "transithub_id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "port_id": "eecaf943-fdcc-40da-bda2-45949026f668",
+      "id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+      "description": null
+    }
+  ]
+}
 ```
 </details>
 
@@ -357,7 +376,24 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_attachment": {
+    "status": "ACTIVE",
+    "remote": false,
+    "name": "thub-attachment",
+    "resource_id": "8eabc2c1-78a2-41e2-b03d-c1021042701f",
+    "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-02-13 01:22:09",
+    "updated_at": "2024-02-13 01:22:11",
+    "resource_cidr": "172.16.0.0/12",
+    "transithub_id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "port_id": "eecaf943-fdcc-40da-bda2-45949026f668",
+    "id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+    "description": null
+  }
+}
 ```
 </details>
 
@@ -384,7 +420,15 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_attachment": {
+    "resource_id": "8eabc2c1-78a2-41e2-b03d-c1021042701f",
+    "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+    "transithub_id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+    "name": "thub-attachment",
+    "description": null
+  }
+}
 ```
 </details>
 
@@ -405,7 +449,24 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_attachment": {
+    "status": "ACTIVE",
+    "remote": false,
+    "name": "thub-attachment",
+    "resource_id": "8eabc2c1-78a2-41e2-b03d-c1021042701f",
+    "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-02-13 01:22:09",
+    "updated_at": "2024-02-13 01:22:11",
+    "resource_cidr": "172.16.0.0/12",
+    "transithub_id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "port_id": "eecaf943-fdcc-40da-bda2-45949026f668",
+    "id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+    "description": null
+  }
+}
 ```
 </details>
 
@@ -430,7 +491,12 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_attachment": {
+    "name": "thub-attachment1",
+    "description": "test1"
+  }
+}
 ```
 </details>
 
@@ -451,7 +517,24 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_attachment": {
+    "status": "ACTIVE",
+    "remote": false,
+    "name": "thub-attachment1",
+    "resource_id": "8eabc2c1-78a2-41e2-b03d-c1021042701f",
+    "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-02-13 01:22:09",
+    "updated_at": "2024-02-13 01:22:11",
+    "resource_cidr": "172.16.0.0/12",
+    "transithub_id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "port_id": "eecaf943-fdcc-40da-bda2-45949026f668",
+    "id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+    "description": "test1"
+  }
+}
 ```
 </details>
 
