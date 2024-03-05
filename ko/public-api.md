@@ -603,7 +603,22 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_tables": [
+    {
+      "status": "ACTIVE",
+      "description": "",
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "created_at": "2024-02-12 22:19:05",
+      "updated_at": "2024-02-12 22:19:08",
+      "default_table": true,
+      "transithub_id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "id": "f5b96823-260a-415f-a162-d1914341137e",
+      "name": "default-9d01afbb-0e"
+    }
+  ]
+}
 ```
 </details>
 
@@ -638,7 +653,20 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_table": {
+    "status": "ACTIVE",
+    "description": "",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-02-12 22:19:05",
+    "updated_at": "2024-02-12 22:19:08",
+    "default_table": true,
+    "transithub_id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "f5b96823-260a-415f-a162-d1914341137e",
+    "name": "default-9d01afbb-0e"
+  }
+}
 ```
 </details>
 
@@ -663,7 +691,13 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_table": {
+    "transithub_id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+    "name": "thub-routing-table",
+    "description": null
+  }
+}
 ```
 </details>
 
@@ -682,7 +716,20 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_table": {
+    "status": "BUILD",
+    "description": null,
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-03-05 22:38:41",
+    "updated_at": "2024-03-05 22:38:41",
+    "default_table": false,
+    "transithub_id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "051eabf3-30f1-4e7a-a9bc-973c64f3c24a",
+    "name": "thub-routing-table"
+  }
+}
 ```
 </details>
 
@@ -707,7 +754,12 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_table": {
+    "name": "thub-routing-table1",
+    "description": "test"
+  }
+}
 ```
 </details>
 
@@ -727,7 +779,20 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_table": {
+    "status": "ACTIVE",
+    "description": "test",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-03-05 22:38:41",
+    "updated_at": "2024-03-05 22:40:44.303417",
+    "default_table": false,
+    "transithub_id": "9d01afbb-0e95-423e-9360-15a3f2e9a233",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "051eabf3-30f1-4e7a-a9bc-973c64f3c24a",
+    "name": "thub-routing-table1"
+  }
+}
 ```
 </details>
 
