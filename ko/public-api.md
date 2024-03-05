@@ -861,7 +861,21 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_associations": [
+    {
+      "status": "ACTIVE",
+      "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+      "description": "",
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "routing_table_id": "f5b96823-260a-415f-a162-d1914341137e",
+      "created_at": "2024-02-13 01:22:09",
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "id": "56f5c3d2-2a9f-4ada-a358-356c6387de76",
+      "updated_at": "2024-02-13 01:22:09"
+    }
+  ]
+}
 ```
 </details>
 
@@ -895,7 +909,19 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_association": {
+    "status": "ACTIVE",
+    "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+    "description": "",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "routing_table_id": "f5b96823-260a-415f-a162-d1914341137e",
+    "created_at": "2024-02-13 01:22:09",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "56f5c3d2-2a9f-4ada-a358-356c6387de76",
+    "updated_at": "2024-02-13 01:22:09"
+  }
+}
 ```
 </details>
 
@@ -920,7 +946,12 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_association": {
+    "routing_table_id": "f5b96823-260a-415f-a162-d1914341137e",
+    "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49"
+  }
+}
 ```
 </details>
 
@@ -938,7 +969,19 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_association": {
+    "status": "ACTIVE",
+    "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+    "description": "",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "routing_table_id": "f5b96823-260a-415f-a162-d1914341137e",
+    "created_at": "2024-03-05 22:51:48",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "a5532ee9-1d7b-44bd-a622-85198171ee98",
+    "updated_at": "2024-03-05 22:51:48"
+  }
+}
 ```
 </details>
 
@@ -1007,7 +1050,21 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_propagations": [
+    {
+      "status": "ACTIVE",
+      "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+      "description": "",
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "routing_table_id": "f5b96823-260a-415f-a162-d1914341137e",
+      "created_at": "2024-02-13 01:22:09",
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "id": "6bf0efaa-6d32-4fef-a341-7662e9bf1eb1",
+      "updated_at": "2024-02-13 01:22:09"
+    }
+  ]
+}
 ```
 </details>
 
@@ -1041,7 +1098,19 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_propagation": {
+    "status": "ACTIVE",
+    "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+    "description": "",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "routing_table_id": "f5b96823-260a-415f-a162-d1914341137e",
+    "created_at": "2024-02-13 01:22:09",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "6bf0efaa-6d32-4fef-a341-7662e9bf1eb1",
+    "updated_at": "2024-02-13 01:22:09"
+  }
+}
 ```
 </details>
 
@@ -1066,7 +1135,12 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_propagation": {
+    "routing_table_id": "f5b96823-260a-415f-a162-d1914341137e",
+    "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49"
+  }
+}
 ```
 </details>
 
@@ -1084,7 +1158,19 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_routing_propagation": {
+    "status": "ACTIVE",
+    "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+    "description": "",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "routing_table_id": "f5b96823-260a-415f-a162-d1914341137e",
+    "created_at": "2024-03-05 22:56:58",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "d1b54e63-0032-44dc-bb31-22d5723782ee",
+    "updated_at": "2024-03-05 22:56:58.825231"
+  }
+}
 ```
 </details>
 
