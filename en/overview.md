@@ -11,7 +11,6 @@ If using **Transit Hub** service, a single gateway acting as a central hub allow
 * Allows you to share Transit Hub with other projects within your organization.
 * Allows you to implement a variety of architectures, including centralized connectivity and isolated routing.
 * Streamline network configuration to increase operational efficiency.
-* Currently, it is only available in Korea (Pangyo) and Korea (Pyeongchon) regions. We plan to expand our support to other regions gradually.
 
 ### Service Targets
 
