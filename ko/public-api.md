@@ -2222,7 +2222,7 @@ X-Auth-Token: {tokenId}
 ### 공유 받은 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_shared_lists/
+GET /v2.0/gateways/transithub_shared_lists/
 X-Auth-Token: {tokenId}
 ```
 
