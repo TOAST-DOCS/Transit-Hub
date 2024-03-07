@@ -299,7 +299,7 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | O | 토큰 ID |
 | id | Query | UUID | - | 조회할 연결 ID |
 | name | Query | String | - | 조회할 연결 이름 |
-| resource_id | Query | UUID | - | 조회할 리소스 ID (VPC) |
+| resource_id | Query | UUID | - | 조회할 리소스 ID(VPC) |
 | subnet_id | Query | UUID | - | 조회할 서브넷 ID |
 | transithub_id | Query | UUID | - | 조회할 트랜짓 허브 ID |
 
@@ -314,7 +314,7 @@ X-Auth-Token: {tokenId}
 | transithub_attachments.tenant_id | Body | String | 테넌트 ID |
 | transithub_attachments.name | Body | String | 연결 이름 |
 | transithub_attachments.description | Body | String | 연결 설명 |
-| transithub_attachments.resource_id | Body | UUID | 리소스 ID (VPC) |
+| transithub_attachments.resource_id | Body | UUID | 리소스 ID(VPC) |
 | transithub_attachments.subnet_id | Body | UUID | 서브넷 ID |
 | transithub_attachments.transithub_id | Body | UUID | 트랜짓 허브 ID |
 
@@ -369,7 +369,7 @@ X-Auth-Token: {tokenId}
 | transithub_attachment.tenant_id | Body | String | 테넌트 ID |
 | transithub_attachment.name | Body | String | 연결 이름 |
 | transithub_attachment.description | Body | String | 연결 설명 |
-| transithub_attachment.resource_id | Body | UUID | 리소스 ID (VPC) |
+| transithub_attachment.resource_id | Body | UUID | 리소스 ID(VPC) |
 | transithub_attachment.subnet_id | Body | UUID | 서브넷 ID |
 | transithub_attachment.transithub_id | Body | UUID | 트랜짓 허브 ID |
 
@@ -413,7 +413,7 @@ X-Auth-Token: {tokenId}
 | transithub_attachment | Body | Object | O | 로드 밸런서 정보 객체 |
 | transithub_attachment.name | Body | String | - | 연결 이름 |
 | transithub_attachment.description | Body | String | - | 연결 설명 |
-| transithub_attachment.resource_id | Body | UUID | O | 리소스 ID (VPC) |
+| transithub_attachment.resource_id | Body | UUID | O | 리소스 ID(VPC) |
 | transithub_attachment.subnet_id | Body | UUID | O | 서브넷 ID |
 | transithub_attachment.transithub_id | Body | UUID | O | 연결이 등록될 트랜짓 허브 ID |
 
@@ -441,7 +441,7 @@ X-Auth-Token: {tokenId}
 | transithub_attachment.tenant_id | Body | String | 테넌트 ID |
 | transithub_attachment.name | Body | String | 연결 이름 |
 | transithub_attachment.description | Body | String | 연결 설명 |
-| transithub_attachment.resource_id | Body | UUID | 리소스 ID (VPC) |
+| transithub_attachment.resource_id | Body | UUID | 리소스 ID(VPC) |
 | transithub_attachment.subnet_id | Body | UUID | 서브넷 ID |
 | transithub_attachment.transithub_id | Body | UUID | 트랜짓 허브 ID |
 
@@ -509,7 +509,7 @@ X-Auth-Token: {tokenId}
 | transithub_attachment.tenant_id | Body | String | 테넌트 ID |
 | transithub_attachment.name | Body | String | 연결 이름 |
 | transithub_attachment.description | Body | String | 연결 설명 |
-| transithub_attachment.resource_id | Body | UUID | 리소스 ID (VPC) |
+| transithub_attachment.resource_id | Body | UUID | 리소스 ID(VPC) |
 | transithub_attachment.subnet_id | Body | UUID | 서브넷 ID |
 | transithub_attachment.transithub_id | Body | UUID | 트랜짓 허브 ID |
 
@@ -2005,8 +2005,8 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_group.description | Body | String | - | 멀티캐스트 그룹 설명 |
 | transithub_multicast_group.association_id | Body | UUID | O | 멀티캐스트 연결 ID |
 | transithub_multicast_group.ipaddress | Body | UUID | O | 멀티캐스트 그룹 IP 주소 |
-| transithub_multicast_group.member_type | Body | String | - | 멀티캐스트 멤버 타입, 멤버로 사용할 경우 `STATIC` 입력<br>멤버타입과 소스타입 중 하나 입력 필수 |
-| transithub_multicast_group.source_type | Body | String | - | 멀티캐스트 소스 타입, 소스로 사용할 경우 `STATIC` 입력<br>멤버타입과 소스타입 중 하나 입력 필수 |
+| transithub_multicast_group.member_type | Body | String | - | 멀티캐스트 멤버 타입, 멤버로 사용할 경우 `STATIC` 입력<br>멤버 타입과 소스 타입 중 하나 입력 필수 |
+| transithub_multicast_group.source_type | Body | String | - | 멀티캐스트 소스 타입, 소스로 사용할 경우 `STATIC` 입력<br>멤 버타입과 소스 타입 중 하나 입력 필수 |
 | transithub_multicast_group.port_id | Body | UUID | O | 멀티캐스트 대상 포트 ID |
 
 
@@ -2242,9 +2242,9 @@ X-Auth-Token: {tokenId}
 | transithub_shared_lists | Body | Array | 공유 받은 정보 목록 |
 | transithub_shared_lists.id | Body | UUID | 공유 받은 정보 ID |
 | transithub_shared_lists.tenant_id | Body | String | 테넌트 ID |
-| transithub_shared_lists.transithub_id | Body | UUID | 공유받은 트랜짓 허브 ID |
-| transithub_shared_lists.transithub_name | Body | String | 공유받은 트랜짓 허브 이름 |
-| transithub_shared_lists.transithub_project_id | Body | UUID | 공유받은 트랜짓 허브의 프로젝트 ID |
+| transithub_shared_lists.transithub_id | Body | UUID | 공유 받은 트랜짓 허브 ID |
+| transithub_shared_lists.transithub_name | Body | String | 공유 받은 트랜짓 허브 이름 |
+| transithub_shared_lists.transithub_project_id | Body | UUID | 공유 받은 트랜짓 허브의 프로젝트 ID |
 
 <details><summary>예시</summary>
   
