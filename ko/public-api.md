@@ -2111,9 +2111,6 @@ X-Auth-Token: {tokenId}
 
 | 이름 | 종류 | 형식 | 설명 |
 |---|---|---|---|
-
-
-
 | transithub_allow_projects | Body | Array | 트랜짓 허브 공유 리소스 목록 |
 | transithub_allow_projects.id | Body | UUID | 트랜짓 허브 공유 리소스 ID |
 | transithub_allow_projects.tenant_id | Body | String | 테넌트 ID |
