@@ -1708,7 +1708,22 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
   
 ```json
-
+{
+  "transithub_multicast_associations": [
+    {
+      "status": "ACTIVE",
+      "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+      "description": "",
+      "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "created_at": "2024-02-13 01:22:37",
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "id": "3da29ae0-f544-4b8e-88c4-eb2ef78d0214",
+      "updated_at": "2024-02-13 01:22:37",
+      "domain_id": "d55022de-947f-4db3-a7b0-5a4cee9a2369"
+    }
+  ]
+}
 ```
 </details>
 
@@ -1745,7 +1760,20 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_multicast_association": {
+    "status": "ACTIVE",
+    "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+    "description": "",
+    "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-02-13 01:22:37",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "3da29ae0-f544-4b8e-88c4-eb2ef78d0214",
+    "updated_at": "2024-02-13 01:22:37",
+    "domain_id": "d55022de-947f-4db3-a7b0-5a4cee9a2369"
+  }
+}
 ```
 </details>
 
@@ -1771,7 +1799,12 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_multicast_association": {
+    "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+    "domain_id": "d55022de-947f-4db3-a7b0-5a4cee9a2369"
+  }
+}
 ```
 </details>
 
@@ -1791,7 +1824,20 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_multicast_association": {
+    "status": "ACTIVE",
+    "attachment_id": "23fc5818-c667-4e90-b50b-70b9e8727f49",
+    "description": "",
+    "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-03-07 00:22:59",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "4da8461b-6c92-4225-8368-60e1e49e3d92",
+    "updated_at": "2024-03-07 00:22:59",
+    "domain_id": "d55022de-947f-4db3-a7b0-5a4cee9a2369"
+  }
+}
 ```
 </details>
 
@@ -1867,7 +1913,25 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
   
 ```json
-
+{
+  "transithub_multicast_groups": [
+    {
+      "description": "",
+      "updated_at": "2024-03-07 00:28:20",
+      "member_type": "STATIC",
+      "source_type": null,
+      "port_id": "b0ca1c15-13e1-4746-b8e1-9ec8e685d228",
+      "ipaddress": "224.0.0.3",
+      "id": "ce8c5fef-6859-4e68-8b46-4cd395c44b37",
+      "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "created_at": "2024-03-07 00:28:20",
+      "domain_id": "27d79c71-ccce-4928-af3c-5ffa5c3ed3fd",
+      "association_id": "b4ba8acd-34d2-48f9-b2f6-cbfe5e92d0f8",
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b"
+    }
+  ]
+}
 ```
 </details>
 
@@ -1904,7 +1968,23 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_multicast_group": {
+    "description": "",
+    "updated_at": "2024-03-07 00:28:20",
+    "member_type": "STATIC",
+    "source_type": null,
+    "port_id": "b0ca1c15-13e1-4746-b8e1-9ec8e685d228",
+    "ipaddress": "224.0.0.3",
+    "id": "ce8c5fef-6859-4e68-8b46-4cd395c44b37",
+    "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-03-07 00:28:20",
+    "domain_id": "27d79c71-ccce-4928-af3c-5ffa5c3ed3fd",
+    "association_id": "b4ba8acd-34d2-48f9-b2f6-cbfe5e92d0f8",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b"
+  }
+}
 ```
 </details>
 
@@ -1933,7 +2013,14 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_multicast_group": {
+    "association_id": "b4ba8acd-34d2-48f9-b2f6-cbfe5e92d0f8",
+    "port_id": "b0ca1c15-13e1-4746-b8e1-9ec8e685d228",
+    "ipaddress": "224.0.0.10",
+    "member_type": "STATIC"
+  }
+}
 ```
 </details>
 
@@ -1955,7 +2042,22 @@ X-Auth-Token: {tokenId}
 <details><summary>예시</summary>
 
 ```json
-
+{
+  "transithub_multicast_group": {
+    "description": "",
+    "association_id": "b4ba8acd-34d2-48f9-b2f6-cbfe5e92d0f8",
+    "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-03-07 00:40:19",
+    "updated_at": "2024-03-07 00:40:19",
+    "member_type": "STATIC",
+    "domain_id": "27d79c71-ccce-4928-af3c-5ffa5c3ed3fd",
+    "source_type": null,
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "ipaddress": "224.0.0.10",
+    "id": "91b281f8-41ab-4d27-8639-da27b23d21db"
+  }
+}
 ```
 </details>
 
