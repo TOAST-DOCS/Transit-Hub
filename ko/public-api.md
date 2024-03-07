@@ -1338,9 +1338,9 @@ X-Auth-Token: {tokenId}
 | transithub_routing_rule.name | Body | String | - | 라우팅 룰 이름 |
 | transithub_routing_rule.description | Body | String | - | 라우팅 룰 설명 |
 | transithub_routing_rule.cidr | Body | String | O | 라우팅 룰 IP 대역 |
-| transithub_routing_rule.action | Body | Enum | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나 |
-| transithub_routing_rule.attachment_id | Body | UUID | 연결(Attachment) ID |
-| transithub_routing_rule.routing_table_id | Body | UUID | 라우팅 룰이 등록될 라우팅 테이블 ID |
+| transithub_routing_rule.action | Body | Enum | - | 라우팅 룰 액션<br>`FORWARD`, `BLACKHOLE` 중 하나<br>입력하지 않을 경우 `FORWARD` |
+| transithub_routing_rule.attachment_id | Body | UUID | O | 연결(Attachment) ID |
+| transithub_routing_rule.routing_table_id | Body | UUID | O | 라우팅 룰이 등록될 라우팅 테이블 ID |
 
 <details><summary>예시</summary>
 
