@@ -2081,3 +2081,155 @@ X-Auth-Token: {tokenId}
 
 #### 응답
 이 API는 응답 본문을 반환하지 않습니다.
+
+
+
+
+
+
+
+## 트랜짓 허브 공유
+
+### 트랜짓 허브 공유 리소스 목록 보기
+
+```
+GET /v2.0/gateways/transithub_allow_projects/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| id | Query | UUID | - | 조회할 트랜짓 허브 공유 리소스 ID |
+| transithub_id | Query | UUID | - | 조회할 트랜짓 허브 ID |
+
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+
+
+
+| transithub_allow_projects | Body | Array | 트랜짓 허브 공유 리소스 목록 |
+| transithub_allow_projects.id | Body | UUID | 트랜짓 허브 공유 리소스 ID |
+| transithub_allow_projects.tenant_id | Body | String | 테넌트 ID |
+| transithub_allow_projects.transithub_id | Body | UUID | 공유할 트랜짓 허브 ID |
+| transithub_allow_projects.transithub_name | Body | String | 트랜짓 허브 이름 |
+| transithub_allow_projects.target_project_id | Body | UUID | 공유 대상 프로젝트 ID |
+
+<details><summary>예시</summary>
+  
+```json
+{
+  "transithub_allow_projects": [
+    {
+      "target_project_id": "cd29a534a15e46049b968dd0835b129b",
+      "description": "",
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "transithub_name": "thub1",
+      "transithub_id": "efb688ea-15c2-4d36-b123-6044e3c37d8c",
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "id": "186717d3-8e26-40ec-ad00-67a8463ccc4c"
+    }
+  ]
+}
+```
+</details>
+
+---
+### 트랜짓 허브 공유 리소스 생성하기
+
+```
+POST /v2.0/gateways/transithub_allow_projects/
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| transithub_multicast_group | Body | Object | O | 멀티캐스트 그룹 정보 객체 |
+| transithub_multicast_group.description | Body | String | - | 멀티캐스트 그룹 설명 |
+| transithub_multicast_group.association_id | Body | UUID | O | 멀티캐스트 연결 ID |
+| transithub_multicast_group.ipaddress | Body | UUID | O | 멀티캐스트 그룹 IP 주소 |
+| transithub_multicast_group.member_type | Body | String | - | 멀티캐스트 멤버 타입, 멤버로 사용할 경우 `STATIC` 입력<br>멤버타입과 소스타입 중 하나 입력 필수 |
+| transithub_multicast_group.source_type | Body | String | - | 멀티캐스트 소스 타입, 소스로 사용할 경우 `STATIC` 입력<br>멤버타입과 소스타입 중 하나 입력 필수 |
+| transithub_multicast_group.port_id | Body | UUID | O | 멀티캐스트 대상 포트 ID |
+
+
+<details><summary>예시</summary>
+
+```json
+{
+  "transithub_multicast_group": {
+    "association_id": "b4ba8acd-34d2-48f9-b2f6-cbfe5e92d0f8",
+    "port_id": "b0ca1c15-13e1-4746-b8e1-9ec8e685d228",
+    "ipaddress": "224.0.0.10",
+    "member_type": "STATIC"
+  }
+}
+```
+</details>
+
+#### 응답
+
+| 이름 | 종류 | 형식 | 설명 |
+|---|---|---|---|
+| transithub_multicast_group | Body | Object | 멀티캐스트 그룹 정보 객체 |
+| transithub_multicast_group.id | Body | UUID | 멀티캐스트 그룹 ID |
+| transithub_multicast_group.tenant_id | Body | String | 테넌트 ID |
+| transithub_multicast_group.description | Body | String | 멀티캐스트 그룹 설명 |
+| transithub_multicast_group.association_id | Body | UUID | 멀티캐스트 연결 ID |
+| transithub_multicast_group.ipaddress | Body | UUID | 멀티캐스트 그룹 IP 주소 |
+| transithub_multicast_group.member_type | Body | String | 멀티캐스트 멤버 타입 |
+| transithub_multicast_group.source_type | Body | String | 멀티캐스트 소스 타입 |
+| transithub_multicast_group.port_id | Body | UUID | 멀티캐스트 대상 포트 ID |
+
+
+<details><summary>예시</summary>
+
+```json
+{
+  "transithub_multicast_group": {
+    "description": "",
+    "association_id": "b4ba8acd-34d2-48f9-b2f6-cbfe5e92d0f8",
+    "subnet_id": "4263b32d-4bc5-45cc-bb3e-fded960e8f46",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "created_at": "2024-03-07 00:40:19",
+    "updated_at": "2024-03-07 00:40:19",
+    "member_type": "STATIC",
+    "domain_id": "27d79c71-ccce-4928-af3c-5ffa5c3ed3fd",
+    "source_type": null,
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "ipaddress": "224.0.0.10",
+    "id": "91b281f8-41ab-4d27-8639-da27b23d21db"
+  }
+}
+```
+</details>
+
+
+---
+### 멀티캐스트 그룹 삭제하기
+
+```
+DELETE /v2.0/gateways/transithub_multicast_groups/{multicastGroupId}
+X-Auth-Token: {tokenId}
+```
+
+#### 요청
+이 API는 요청 본문을 요구하지 않습니다.
+
+| 이름 | 종류 | 형식 | 필수 | 설명 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | 토큰 ID |
+| multicastGroupId | URL | UUID | O | 멀티캐스트 그룹 ID |
+
+
+#### 응답
+이 API는 응답 본문을 반환하지 않습니다.
