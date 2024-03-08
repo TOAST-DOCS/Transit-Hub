@@ -2006,7 +2006,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_group.association_id | Body | UUID | O | 멀티캐스트 연결 ID |
 | transithub_multicast_group.ipaddress | Body | UUID | O | 멀티캐스트 그룹 IP 주소 |
 | transithub_multicast_group.member_type | Body | String | - | 멀티캐스트 멤버 타입, 멤버로 사용할 경우 `STATIC` 입력<br>멤버 타입과 소스 타입 중 하나 입력 필수 |
-| transithub_multicast_group.source_type | Body | String | - | 멀티캐스트 소스 타입, 소스로 사용할 경우 `STATIC` 입력<br>멤 버타입과 소스 타입 중 하나 입력 필수 |
+| transithub_multicast_group.source_type | Body | String | - | 멀티캐스트 소스 타입, 소스로 사용할 경우 `STATIC` 입력<br>멤버 타입과 소스 타입 중 하나 입력 필수 |
 | transithub_multicast_group.port_id | Body | UUID | O | 멀티캐스트 대상 포트 ID |
 
 
