@@ -1588,7 +1588,7 @@ X-Auth-Token: {tokenId}
 ### 멀티캐스트 도메인 수정하기
 
 ```
-POST /v2.0/gateways/transithub_multicast_domains/{multicastDomainId}
+PUT /v2.0/gateways/transithub_multicast_domains/{multicastDomainId}
 X-Auth-Token: {tokenId}
 ```
 
