@@ -1905,7 +1905,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_groups.tenant_id | Body | String | テナントID |
 | transithub_multicast_groups.description | Body | String | マルチキャストグループの説明 |
 | transithub_multicast_groups.association_id | Body | UUID | マルチキャスト接続ID |
-| transithub_multicast_groups.ipaddress | Body | UUID | マルチキャストグループIPアドレス |
+| transithub_multicast_groups.ipaddress | Body | String | マルチキャストグループIPアドレス |
 | transithub_multicast_groups.member_type | Body | String | マルチキャストメンバータイプ |
 | transithub_multicast_groups.source_type | Body | String | マルチキャストソースタイプ |
 | transithub_multicast_groups.port_id | Body | UUID | マルチキャスト対象ポートID |
@@ -1960,7 +1960,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_group.tenant_id | Body | String | テナントID |
 | transithub_multicast_group.description | Body | String | マルチキャストグループの説明 |
 | transithub_multicast_group.association_id | Body | UUID | マルチキャスト接続ID |
-| transithub_multicast_group.ipaddress | Body | UUID | マルチキャストグループIPアドレス |
+| transithub_multicast_group.ipaddress | Body | String | マルチキャストグループIPアドレス |
 | transithub_multicast_group.member_type | Body | String | マルチキャストメンバータイプ |
 | transithub_multicast_group.source_type | Body | String | マルチキャストソースタイプ |
 | transithub_multicast_group.port_id | Body | UUID | マルチキャスト対象ポートID |
@@ -2004,7 +2004,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_group | Body | Object | O | マルチキャストグループ情報オブジェクト |
 | transithub_multicast_group.description | Body | String | - | マルチキャストグループの説明 |
 | transithub_multicast_group.association_id | Body | UUID | O | マルチキャスト接続ID |
-| transithub_multicast_group.ipaddress | Body | UUID | O | マルチキャストグループIPアドレス |
+| transithub_multicast_group.ipaddress | Body | String | O | マルチキャストグループIPアドレス |
 | transithub_multicast_group.member_type | Body | String | - | マルチキャストメンバータイプ、メンバーとして使用する場合は`STATIC`を入力<br>メンバータイプとソースタイプのいずれかの入力必須 |
 | transithub_multicast_group.source_type | Body | String | - | マルチキャストソースタイプ、ソースとして使用する場合は`STATIC`を入力<br>メンバータイプとソースタイプのいずれかの入力必須 |
 | transithub_multicast_group.port_id | Body | UUID | O | マルチキャスト対象ポートID |
@@ -2033,7 +2033,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_group.tenant_id | Body | String | テナントID |
 | transithub_multicast_group.description | Body | String | マルチキャストグループの説明 |
 | transithub_multicast_group.association_id | Body | UUID | マルチキャスト接続ID |
-| transithub_multicast_group.ipaddress | Body | UUID | マルチキャストグループIPアドレス |
+| transithub_multicast_group.ipaddress | Body | String | マルチキャストグループIPアドレス |
 | transithub_multicast_group.member_type | Body | String | マルチキャストメンバータイプ |
 | transithub_multicast_group.source_type | Body | String | マルチキャストソースタイプ |
 | transithub_multicast_group.port_id | Body | UUID | マルチキャスト対象ポートID |
