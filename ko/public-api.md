@@ -1905,7 +1905,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_groups.tenant_id | Body | String | 테넌트 ID |
 | transithub_multicast_groups.description | Body | String | 멀티캐스트 그룹 설명 |
 | transithub_multicast_groups.association_id | Body | UUID | 멀티캐스트 연결 ID |
-| transithub_multicast_groups.ipaddress | Body | UUID | 멀티캐스트 그룹 IP 주소 |
+| transithub_multicast_groups.ipaddress | Body | String | 멀티캐스트 그룹 IP 주소 |
 | transithub_multicast_groups.member_type | Body | String | 멀티캐스트 멤버 타입 |
 | transithub_multicast_groups.source_type | Body | String | 멀티캐스트 소스 타입 |
 | transithub_multicast_groups.port_id | Body | UUID | 멀티캐스트 대상 포트 ID |
@@ -1960,7 +1960,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_group.tenant_id | Body | String | 테넌트 ID |
 | transithub_multicast_group.description | Body | String | 멀티캐스트 그룹 설명 |
 | transithub_multicast_group.association_id | Body | UUID | 멀티캐스트 연결 ID |
-| transithub_multicast_group.ipaddress | Body | UUID | 멀티캐스트 그룹 IP 주소 |
+| transithub_multicast_group.ipaddress | Body | String | 멀티캐스트 그룹 IP 주소 |
 | transithub_multicast_group.member_type | Body | String | 멀티캐스트 멤버 타입 |
 | transithub_multicast_group.source_type | Body | String | 멀티캐스트 소스 타입 |
 | transithub_multicast_group.port_id | Body | UUID | 멀티캐스트 대상 포트 ID |
@@ -2004,7 +2004,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_group | Body | Object | O | 멀티캐스트 그룹 정보 객체 |
 | transithub_multicast_group.description | Body | String | - | 멀티캐스트 그룹 설명 |
 | transithub_multicast_group.association_id | Body | UUID | O | 멀티캐스트 연결 ID |
-| transithub_multicast_group.ipaddress | Body | UUID | O | 멀티캐스트 그룹 IP 주소 |
+| transithub_multicast_group.ipaddress | Body | String | O | 멀티캐스트 그룹 IP 주소 |
 | transithub_multicast_group.member_type | Body | String | - | 멀티캐스트 멤버 타입, 멤버로 사용할 경우 `STATIC` 입력<br>멤버 타입과 소스 타입 중 하나 입력 필수 |
 | transithub_multicast_group.source_type | Body | String | - | 멀티캐스트 소스 타입, 소스로 사용할 경우 `STATIC` 입력<br>멤버 타입과 소스 타입 중 하나 입력 필수 |
 | transithub_multicast_group.port_id | Body | UUID | O | 멀티캐스트 대상 포트 ID |
@@ -2033,7 +2033,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_group.tenant_id | Body | String | 테넌트 ID |
 | transithub_multicast_group.description | Body | String | 멀티캐스트 그룹 설명 |
 | transithub_multicast_group.association_id | Body | UUID | 멀티캐스트 연결 ID |
-| transithub_multicast_group.ipaddress | Body | UUID | 멀티캐스트 그룹 IP 주소 |
+| transithub_multicast_group.ipaddress | Body | String | 멀티캐스트 그룹 IP 주소 |
 | transithub_multicast_group.member_type | Body | String | 멀티캐스트 멤버 타입 |
 | transithub_multicast_group.source_type | Body | String | 멀티캐스트 소스 타입 |
 | transithub_multicast_group.port_id | Body | UUID | 멀티캐스트 대상 포트 ID |
