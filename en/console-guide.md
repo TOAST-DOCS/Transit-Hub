@@ -195,7 +195,7 @@ To create **routing rule** , use the following steps.
 3. On the creation screen, enter the information about **routing rule**.
     * CIDR: Enter the destination network band for the routing policy.
     > [Note] The priority of **routing rules** in the routing table is determined by the Longest Pre-fix Matching result of CIDR set in the routing rule.
-    * Method: Select how to process packets matching **CIDR**. Selecting **FORWARD** will send the packets to the specified **attachment**, and selecting **BLACKHOLE** will destroy the packet.
+    * Method: Select how to process packets matching **CIDR**. Selecting **FORWARD** will send the packets to the specified **attachment**, and selecting **BLACKHOLE** will destroy the packets.
     * Attach: If **FORWARD** is selected from **Method**, select **attachment** to send packets from **Routing Table**.
 
 ##### Delete Routing Rule
