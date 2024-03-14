@@ -193,9 +193,10 @@ To create **routing rule** , use the following steps.
 1. Go to **Network > Transit Hub > Routing Table > Routing Rule**.
 2. Click **Create Routing Rule** to display the creation screen.
 3. On the creation screen, enter the information about **routing rule**.
-    * Target CIDR: Enter the destination network band for the routing policy.
+    * CIDR: Enter the destination network band for the routing policy.
     > [Note] The priority of **routing rules** in the routing table is determined by the Longest Pre-fix Matching result of CIDR set in the routing rule.
-    * Attach: Select **attachment** for routing table to receive packets.
+    * Method: Select how to process packets matching **CIDR**. Selecting **FORWARD** will send the packets to the specified **attachment**, and selecting **BLACKHOLE** will destroy the packet.
+    * Attach: If **FORWARD** is selected from **Method**, select **attachment** to send packets from **Routing Table**.
 
 ##### Delete Routing Rule
 
