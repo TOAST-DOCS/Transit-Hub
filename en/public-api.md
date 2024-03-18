@@ -12,15 +12,15 @@ In each API response, you may find fields that are not specified within this gui
 
 ## Transit Hub
 
-### View Transit Hubs
+### View the list of transit hubs
 
 ```
 GET /v2.0/gateways/transithubs
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -29,7 +29,7 @@ Type
 | String | Query | Token ID | - | Transit hub name to query |
 
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -73,15 +73,15 @@ GET /v2.0/gateways/transithubs/{transitHubId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
 | String | O | Token ID | Response | Token ID |
 | transitHubId | O | UUID | Response | Transit Hub ID |
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -123,7 +123,7 @@ POST /v2.0/gateways/transithubs
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -153,7 +153,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -196,7 +196,7 @@ PUT /v2.0/gateways/transithubs/{transitHubId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -218,7 +218,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -261,8 +261,8 @@ DELETE /v2.0/gateways/transithubs/{transitHubId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -270,7 +270,7 @@ Type
 | transitHubId | O | UUID | Response | Transit Hub ID |
 
 
-#### Type
+#### Response
 Stops the specified node group.
 
 
@@ -284,15 +284,15 @@ Stops the specified node group.
 
 ## Connected
 
-### View Attachments
+### View attachments
 
 ```
 GET /v2.0/gateways/transithub_attachments/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -305,7 +305,7 @@ Type
 
 
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -352,15 +352,15 @@ GET /v2.0/gateways/transithub_attachments/{attachmentId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
 | String | O | Token ID | Response | Token ID |
 | attachmentId | O | UUID | Response | Attachment ID |
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -405,7 +405,7 @@ POST /v2.0/gateways/transithub_attachments/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -432,7 +432,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -478,7 +478,7 @@ PUT /v2.0/gateways/transithub_attachments/{attachmentId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -500,7 +500,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -546,8 +546,8 @@ DELETE /v2.0/gateways/transithub_attachments/{attachmentId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -555,7 +555,7 @@ Type
 | attachmentId | O | UUID | Response | Attachment ID |
 
 
-#### Type
+#### Response
 Stops the specified node group.
 
 
@@ -569,15 +569,15 @@ Stops the specified node group.
 
 ## Routing Table
 
-### View Routing Tables
+### View Routing Table List
 
 ```
 GET /v2.0/gateways/transithub_routing_tables/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -588,7 +588,7 @@ Type
 
 
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -630,15 +630,15 @@ GET /v2.0/gateways/transithub_routing_tables/{routingTableId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
 | String | O | Token ID | Response | Token ID |
 | routingTableId | O | UUID | Response | Routing table ID |
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -678,7 +678,7 @@ POST /v2.0/gateways/transithub_routing_tables/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -701,7 +701,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -741,7 +741,7 @@ PUT /v2.0/gateways/transithub_routing_tables/{routingTableId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -763,7 +763,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -804,8 +804,8 @@ DELETE /v2.0/gateways/transithub_routing_tables/{routingTableId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -813,7 +813,7 @@ Type
 | routingTableId | O | UUID | Response | Routing table ID |
 
 
-#### Type
+#### Response
 Stops the specified node group.
 
 
@@ -835,8 +835,8 @@ GET /v2.0/gateways/transithub_routing_associations/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -847,7 +847,7 @@ Type
 
 
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -887,15 +887,15 @@ GET /v2.0/gateways/transithub_routing_associations/{routingAssociationId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
 | String | O | Token ID | Response | Token ID |
 | routingAssociationId | O | UUID | Response | Routing Association ID |
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -933,7 +933,7 @@ POST /v2.0/gateways/transithub_routing_associations/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -955,7 +955,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -993,8 +993,8 @@ DELETE /v2.0/gateways/transithub_routing_associations/{routingAssociationId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1002,7 +1002,7 @@ Type
 | routingAssociationId | O | UUID | Response | Routing Association ID |
 
 
-#### Type
+#### Response
 Stops the specified node group.
 
 
@@ -1024,8 +1024,8 @@ GET /v2.0/gateways/transithub_routing_propagations/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1036,7 +1036,7 @@ Type
 
 
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1076,15 +1076,15 @@ GET /v2.0/gateways/transithub_routing_propagations/{routingPropagationId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
 | String | O | Token ID | Response | Token ID |
 | routingPropagationId | O | UUID | Response | Routing Propagation ID |
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1122,7 +1122,7 @@ POST /v2.0/gateways/transithub_routing_propagations/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1144,7 +1144,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1182,8 +1182,8 @@ DELETE /v2.0/gateways/transithub_routing_propagations/{routingPropagationId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1191,7 +1191,7 @@ Type
 | routingPropagationId | O | UUID | Response | Routing Propagation ID |
 
 
-#### Type
+#### Response
 Stops the specified node group.
 
 
@@ -1213,8 +1213,8 @@ GET /v2.0/gateways/transithub_routing_rules/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1227,7 +1227,7 @@ Type
 
 
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1275,15 +1275,15 @@ GET /v2.0/gateways/transithub_routing_rules/{routingRuleId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
 | String | O | Token ID | Response | Token ID |
 | routingRuleId | O | UUID | Response | Routing Rule ID |
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1329,7 +1329,7 @@ POST /v2.0/gateways/transithub_routing_rules/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1355,7 +1355,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1401,8 +1401,8 @@ DELETE /v2.0/gateways/transithub_routing_rules/{routingRuleId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1410,7 +1410,7 @@ Type
 | routingRuleId | O | UUID | Response | Routing Rule ID |
 
 
-#### Type
+#### Response
 Stops the specified node group.
 
 
@@ -1433,8 +1433,8 @@ GET /v2.0/gateways/transithub_multicast_domains/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1444,7 +1444,7 @@ Type
 | transithub_id | Query | UUID | - | Transit hub ID to query |
 
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1484,15 +1484,15 @@ GET /v2.0/gateways/transithub_multicast_domains/{multicastDomainId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
 | String | O | Token ID | Response | Token ID |
 | multicastDomainId | O | UUID | Response | Multicast Domain ID |
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1531,7 +1531,7 @@ POST /v2.0/gateways/transithub_multicast_domains/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1553,7 +1553,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1592,7 +1592,7 @@ PUT /v2.0/gateways/transithub_multicast_domains/{multicastDomainId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1614,7 +1614,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1653,8 +1653,8 @@ DELETE /v2.0/gateways/transithub_multicast_domains/{multicastDomainId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1662,7 +1662,7 @@ Type
 | multicastDomainId | O | UUID | Response | Multicast Domain ID |
 
 
-#### Type
+#### Response
 Stops the specified node group.
 
 
@@ -1682,8 +1682,8 @@ GET /v2.0/gateways/transithub_multicast_associations/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1693,7 +1693,7 @@ Type
 | domain_id | Query | UUID | - | Multicast domain ID to query |
 
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1736,15 +1736,15 @@ GET /v2.0/gateways/transithub_multicast_domains/{multicastAssociationId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
 | String | O | Token ID | Response | Token ID |
 | multicastAssociationId | O | UUID | Response | Routing Rule ID |
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1786,7 +1786,7 @@ POST /v2.0/gateways/transithub_multicast_associations/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1808,7 +1808,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1849,8 +1849,8 @@ DELETE /v2.0/gateways/transithub_multicast_associations/{multicastAssociationId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1858,7 +1858,7 @@ Type
 | multicastAssociationId | O | UUID | Response | Multicast association ID |
 
 
-#### Type
+#### Response
 Stops the specified node group.
 
 
@@ -1885,8 +1885,8 @@ GET /v2.0/gateways/transithub_multicast_groups/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -1896,7 +1896,7 @@ Type
 | domain_id | Query | UUID | - | Multicast group ID to query |
 
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1943,15 +1943,15 @@ GET /v2.0/gateways/transithub_multicast_groups/{multicastGroupId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
 | String | O | Token ID | Response | Token ID |
 | multicastGroupId | O | UUID | Response | Multicast Group ID |
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -1996,7 +1996,7 @@ POST /v2.0/gateways/transithub_multicast_groups/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -2024,7 +2024,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -2070,8 +2070,8 @@ DELETE /v2.0/gateways/transithub_multicast_groups/{multicastGroupId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -2079,7 +2079,7 @@ Type
 | multicastGroupId | O | UUID | Response | Multicast Group ID |
 
 
-#### Type
+#### Response
 Stops the specified node group.
 
 
@@ -2097,8 +2097,8 @@ GET /v2.0/gateways/transithub_allow_projects/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -2107,7 +2107,7 @@ Type
 | transithub_id | Query | UUID | - | Transit hub ID to query |
 
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -2145,7 +2145,7 @@ POST /v2.0/gateways/transithub_allow_projects/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
+#### Request
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -2167,7 +2167,7 @@ X-Auth-Token: {tokenId}
 ```
 </details>
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
@@ -2205,8 +2205,8 @@ DELETE /v2.0/gateways/transithub_allow_projects/{allowProjectId}
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -2214,7 +2214,7 @@ Type
 | allowProjectId | O | UUID | Response | Sharing allowed information ID |
 
 
-#### Type
+#### Response
 Stops the specified node group.
 
 
@@ -2226,8 +2226,8 @@ GET /v2.0/gateways/transithub_shared_lists/
 X-Auth-Token: {tokenId}
 ```
 
-#### Name
-Type
+#### Request
+This API does not require a request body.
 
 | Format | Description | Description | tokenId | Header |
 |---|---|---|---|---|
@@ -2235,7 +2235,7 @@ Type
 | transithub_id | Query | UUID | - | Transit hub ID to query |
 
 
-#### Type
+#### Response
 
 | Format | Description | Description | Header |
 |---|---|---|---|
