@@ -12,7 +12,7 @@ In each API response, you may find fields that are not specified within this gui
 
 ## Transit Hub
 
-### View the list of transit hubs
+### View Transit Hubs
 
 ```
 GET /v2.0/gateways/transithubs
@@ -282,9 +282,9 @@ Stops the specified node group.
 
 
 
-## Connected
+## Attachment
 
-### View attachments
+### View Attachments
 
 ```
 GET /v2.0/gateways/transithub_attachments/
@@ -569,7 +569,7 @@ Stops the specified node group.
 
 ## Routing Table
 
-### View Routing Table List
+### View Routing Tables
 
 ```
 GET /v2.0/gateways/transithub_routing_tables/
