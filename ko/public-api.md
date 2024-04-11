@@ -2112,7 +2112,7 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 설명 |
 |---|---|---|---|
 | transithub_allow_projects | Body | Array | 공유 허용 정보 목록 |
-| transithub_allow_projects.id | Body | UUID | 트랜짓 허브 허용 정보 ID |
+| transithub_allow_projects.id | Body | UUID | 공유 허용 정보 ID |
 | transithub_allow_projects.tenant_id | Body | String | 테넌트 ID |
 | transithub_allow_projects.transithub_id | Body | UUID | 공유할 트랜짓 허브 ID |
 | transithub_allow_projects.transithub_name | Body | String | 트랜짓 허브 이름 |
@@ -2295,7 +2295,7 @@ X-Auth-Token: {tokenId}
 | 이름 | 종류 | 형식 | 설명 |
 |---|---|---|---|
 | transithub_multicast_domain_allow_projects | Body | Array | 공유 허용 정보 목록 |
-| transithub_multicast_domain_allow_projects.id | Body | UUID | 트랜짓 허브 허용 정보 ID |
+| transithub_multicast_domain_allow_projects.id | Body | UUID | 공유 허용 정보 ID |
 | transithub_multicast_domain_allow_projects.tenant_id | Body | String | 테넌트 ID |
 | transithub_multicast_domain_allow_projects.domain_id | Body | UUID | 공유할 멀티캐스트 도메인 ID |
 | transithub_multicast_domain_allow_projects.domain_name | Body | String | 멀티캐스트 도메인 이름 |
