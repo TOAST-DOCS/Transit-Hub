@@ -2112,7 +2112,7 @@ This API does not require a request body.
 | Format | Description | Description | Header |
 |---|---|---|---|
 | transithub_allow_projects | String | nodegroups.uuid | Sharing allowed information list |
-| transithub_allow_projects.id | String | UUID | Transit hub allow information ID |
+| transithub_allow_projects.id | String | UUID | Sharing allowed information ID |
 | transithub_allow_projects.tenant_id | String | Token ID | Tenant ID |
 | transithub_allow_projects.transithub_id | String | UUID | Transit hub ID to share |
 | transithub_allow_projects.transithub_name | String | Token ID | Transit Hub Name |
@@ -2151,8 +2151,8 @@ X-Auth-Token: {tokenId}
 |---|---|---|---|---|
 | String | O | Token ID | Response | Token ID |
 | transithub_allow_project | String | Object | Response | Share sharing allowed information object |
-| transithub_allow_projects.transithub_id | String | UUID | Response | Transit hub ID to share |
-| transithub_allow_projects.target_project_id | String | UUID | Response | Project ID to share with |
+| transithub_allow_project.transithub_id | String | UUID | Response | Transit hub ID to share |
+| transithub_allow_project.target_project_id | String | UUID | Response | Project ID to share with |
 
 
 <details><summary>Example</summary>
@@ -2257,6 +2257,189 @@ This API does not require a request body.
       "transithub_project_id": "1fb0cf13afb341b699f74bbbecab2117",
       "transithub_name": "thub",
       "transithub_id": "4050efd6-b6cc-4e2d-9402-dd5e1520872f",
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "id": "51c8fd9c-ae82-474f-9664-9fc31c77a563"
+    }
+  ]
+}
+```
+</details>
+
+
+
+
+
+
+
+## Share Multicast Domain
+
+### View Sharing Allowed List
+
+```
+GET /v2.0/gateways/transithub_multicast_domain_allow_projects/
+X-Auth-Token: {tokenId}
+```
+
+#### Request
+This API does not require a request body.
+
+| Format | Description | Description | tokenId | Header |
+|---|---|---|---|---|
+| String | O | Token ID | Response | Token ID |
+| id | Query | UUID | - | Sharing allowed information ID to query |
+| domain_id | Query | UUID | - | Multicast domain ID to query |
+
+
+#### Response
+
+| Format | Description | Description | Header |
+|---|---|---|---|
+| transithub_multicast_domain_allow_projects | String | nodegroups.uuid | Sharing allowed information list |
+| transithub_multicast_domain_allow_projects.id | String | UUID | Sharing allowed information ID |
+| transithub_multicast_domain_allow_projects.tenant_id | String | Token ID | Tenant ID |
+| transithub_multicast_domain_allow_projects.domain_id | String | UUID | Multicast domain ID to share |
+| transithub_multicast_domain_allow_projects.domain_name | String | Token ID | Multicast domain name |
+| transithub_multicast_domain_allow_projects.target_project_id | String | UUID | Project ID to share with |
+
+<details><summary>Example</summary>
+  
+```json
+{
+  "transithub_multicast_domain_allow_projects": [
+    {
+      "target_project_id": "cd29a534a15e46049b968dd0835b129b",
+      "description": "",
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "domain_name": "domain1",
+      "domain_id": "d55022de-947f-4db3-a7b0-5a4cee9a2369",
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "id": "186717d3-8e26-40ec-ad00-67a8463ccc4c"
+    }
+  ]
+}
+```
+</details>
+
+---
+### Create Sharing Allowed Information
+
+```
+POST /v2.0/gateways/transithub_multicast_domain_allow_projects/
+X-Auth-Token: {tokenId}
+```
+
+#### Request
+
+| Format | Description | Description | tokenId | Header |
+|---|---|---|---|---|
+| String | O | Token ID | Response | Token ID |
+| transithub_multicast_domain_allow_project | String | Object | Response | Share sharing allowed information object |
+| transithub_multicast_domain_allow_project.domain_id | String | UUID | Response | Multicast domain ID to share |
+| transithub_multicast_domain_allow_project.target_project_id | String | UUID | Response | Project ID to share with |
+
+
+<details><summary>Example</summary>
+
+```json
+transithub_multicast_domain{
+  "transithub_multicast_domain_allow_project": {
+    "target_project_id": "cd29a534a15e46049b968dd0835b129b",
+    "domain_id": "efb688ea-15c2-4d36-b123-6044e3c37d8c"
+  }
+}
+```
+</details>
+
+#### Response
+
+| Format | Description | Description | Header |
+|---|---|---|---|
+| transithub_multicast_domain_allow_project | String | Object | Share sharing allowed information object |
+| transithub_multicast_domain_allow_project.id | String | UUID | Sharing allowed information ID |
+| transithub_multicast_domain_allow_project.tenant_id | String | Token ID | Tenant ID |
+| transithub_multicast_domain_allow_project.domain_id | String | UUID | Multicast domain ID to share |
+| transithub_multicast_domain_allow_project.domain_name | String | Token ID | Multicast domain name |
+| transithub_multicast_domain_allow_project.target_project_id | String | UUID | Project ID to share with |
+
+
+<details><summary>Example</summary>
+
+```json
+{
+  "transithub_multicast_domain_allow_project": {
+    "target_project_id": "cd29a534a15e46049b968dd0835b129b",
+    "description": "",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "domain_name": "domain1",
+    "domain_id": "d55022de-947f-4db3-a7b0-5a4cee9a2369",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "3d962640-385f-4874-8766-aa1b4480e7e4"
+  }
+}
+```
+</details>
+
+
+---
+### Delete Sharing Allowed Information
+
+```
+DELETE /v2.0/gateways/transithub_multicast_domain_allow_projects/{allowProjectId}
+X-Auth-Token: {tokenId}
+```
+
+#### Request
+This API does not require a request body.
+
+| Format | Description | Description | tokenId | Header |
+|---|---|---|---|---|
+| String | O | Token ID | Response | Token ID |
+| allowProjectId | O | UUID | Response | Sharing allowed information ID |
+
+
+#### Response
+Stops the specified node group.
+
+
+
+### View Shared List
+
+```
+GET /v2.0/gateways/transithub_multicast_domain_shared_lists/
+X-Auth-Token: {tokenId}
+```
+
+#### Request
+This API does not require a request body.
+
+| Format | Description | Description | tokenId | Header |
+|---|---|---|---|---|
+| String | O | Token ID | Response | Token ID |
+| domain_id | Query | UUID | - | Multicast domain ID to query |
+
+
+#### Response
+
+| Format | Type | Description | Header |
+|---|---|---|---|
+| transithub_multicast_domain_shared_lists | String | nodegroups.uuid | Shared information list |
+| transithub_multicast_domain_shared_lists.id | String | UUID | Shared Information ID |
+| transithub_multicast_domain_shared_lists.tenant_id | String | Token ID | Tenant ID |
+| transithub_multicast_domain_shared_lists.domain_id | String | UUID | Shared multicast domain ID  |
+| transithub_multicast_domain_shared_lists.domain_name | String | Token ID | Shared multicast domain name |
+| transithub_multicast_domain_shared_lists.domain_project_id | String | UUID | Project ID of the shared multicast domain |
+
+<details><summary>Example</summary>
+  
+```json
+{
+  "transithub_multicast_domain_shared_lists": [
+    {
+      "description": "",
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "domain_project_id": "1fb0cf13afb341b699f74bbbecab2117",
+      "domain_name": "domain1",
+      "domain_id": "d55022de-947f-4db3-a7b0-5a4cee9a2369",
       "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
       "id": "51c8fd9c-ae82-474f-9664-9fc31c77a563"
     }
