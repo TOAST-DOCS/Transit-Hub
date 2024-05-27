@@ -287,7 +287,7 @@ X-Auth-Token: {tokenId}
 ### 연결 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_attachments/
+GET /v2.0/gateways/transithub_attachments
 X-Auth-Token: {tokenId}
 ```
 
@@ -401,7 +401,7 @@ X-Auth-Token: {tokenId}
 ### 연결 생성하기
 
 ```
-POST /v2.0/gateways/transithub_attachments/
+POST /v2.0/gateways/transithub_attachments
 X-Auth-Token: {tokenId}
 ```
 
@@ -572,7 +572,7 @@ X-Auth-Token: {tokenId}
 ### 라우팅 테이블 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_routing_tables/
+GET /v2.0/gateways/transithub_routing_tables
 X-Auth-Token: {tokenId}
 ```
 
@@ -674,7 +674,7 @@ X-Auth-Token: {tokenId}
 ### 라우팅 테이블 생성하기
 
 ```
-POST /v2.0/gateways/transithub_routing_tables/
+POST /v2.0/gateways/transithub_routing_tables
 X-Auth-Token: {tokenId}
 ```
 
@@ -831,7 +831,7 @@ X-Auth-Token: {tokenId}
 ### 라우팅 연결 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_routing_associations/
+GET /v2.0/gateways/transithub_routing_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -929,7 +929,7 @@ X-Auth-Token: {tokenId}
 ### 라우팅 연결 생성하기
 
 ```
-POST /v2.0/gateways/transithub_routing_associations/
+POST /v2.0/gateways/transithub_routing_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1020,7 +1020,7 @@ X-Auth-Token: {tokenId}
 ### 라우팅 전파 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_routing_propagations/
+GET /v2.0/gateways/transithub_routing_propagations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1118,7 +1118,7 @@ X-Auth-Token: {tokenId}
 ### 라우팅 전파 생성하기
 
 ```
-POST /v2.0/gateways/transithub_routing_propagations/
+POST /v2.0/gateways/transithub_routing_propagations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1209,7 +1209,7 @@ X-Auth-Token: {tokenId}
 ### 라우팅 룰 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_routing_rules/
+GET /v2.0/gateways/transithub_routing_rules
 X-Auth-Token: {tokenId}
 ```
 
@@ -1325,7 +1325,7 @@ X-Auth-Token: {tokenId}
 ### 라우팅 룰 생성하기
 
 ```
-POST /v2.0/gateways/transithub_routing_rules/
+POST /v2.0/gateways/transithub_routing_rules
 X-Auth-Token: {tokenId}
 ```
 
@@ -1429,7 +1429,7 @@ X-Auth-Token: {tokenId}
 ### 멀티캐스트 도메인 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_multicast_domains/
+GET /v2.0/gateways/transithub_multicast_domains
 X-Auth-Token: {tokenId}
 ```
 
@@ -1527,7 +1527,7 @@ X-Auth-Token: {tokenId}
 ### 멀티캐스트 도메인 생성하기
 
 ```
-POST /v2.0/gateways/transithub_multicast_domains/
+POST /v2.0/gateways/transithub_multicast_domains
 X-Auth-Token: {tokenId}
 ```
 
@@ -1678,7 +1678,7 @@ X-Auth-Token: {tokenId}
 ### 멀티캐스트 연결 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_multicast_associations/
+GET /v2.0/gateways/transithub_multicast_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1732,7 +1732,7 @@ X-Auth-Token: {tokenId}
 ### 멀티캐스트 연결 보기
 
 ```
-GET /v2.0/gateways/transithub_multicast_domains/{multicastAssociationId}
+GET /v2.0/gateways/transithub_multicast_associations/{multicastAssociationId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -1782,7 +1782,7 @@ X-Auth-Token: {tokenId}
 ### 멀티캐스트 연결 생성하기
 
 ```
-POST /v2.0/gateways/transithub_multicast_associations/
+POST /v2.0/gateways/transithub_multicast_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1881,7 +1881,7 @@ X-Auth-Token: {tokenId}
 ### 멀티캐스트 그룹 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_multicast_groups/
+GET /v2.0/gateways/transithub_multicast_groups
 X-Auth-Token: {tokenId}
 ```
 
@@ -1992,7 +1992,7 @@ X-Auth-Token: {tokenId}
 ### 멀티캐스트 그룹 생성하기
 
 ```
-POST /v2.0/gateways/transithub_multicast_groups/
+POST /v2.0/gateways/transithub_multicast_groups
 X-Auth-Token: {tokenId}
 ```
 
@@ -2093,7 +2093,7 @@ X-Auth-Token: {tokenId}
 ### 공유 허용 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_allow_projects/
+GET /v2.0/gateways/transithub_allow_projects
 X-Auth-Token: {tokenId}
 ```
 
@@ -2141,7 +2141,7 @@ X-Auth-Token: {tokenId}
 ### 공유 허용 정보 생성하기
 
 ```
-POST /v2.0/gateways/transithub_allow_projects/
+POST /v2.0/gateways/transithub_allow_projects
 X-Auth-Token: {tokenId}
 ```
 
@@ -2222,7 +2222,7 @@ X-Auth-Token: {tokenId}
 ### 공유 받은 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_shared_lists/
+GET /v2.0/gateways/transithub_shared_lists
 X-Auth-Token: {tokenId}
 ```
 
@@ -2276,7 +2276,7 @@ X-Auth-Token: {tokenId}
 ### 공유 허용 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_multicast_domain_allow_projects/
+GET /v2.0/gateways/transithub_multicast_domain_allow_projects
 X-Auth-Token: {tokenId}
 ```
 
@@ -2324,7 +2324,7 @@ X-Auth-Token: {tokenId}
 ### 공유 허용 정보 생성하기
 
 ```
-POST /v2.0/gateways/transithub_multicast_domain_allow_projects/
+POST /v2.0/gateways/transithub_multicast_domain_allow_projects
 X-Auth-Token: {tokenId}
 ```
 
@@ -2405,7 +2405,7 @@ X-Auth-Token: {tokenId}
 ### 공유 받은 목록 보기
 
 ```
-GET /v2.0/gateways/transithub_multicast_domain_shared_lists/
+GET /v2.0/gateways/transithub_multicast_domain_shared_lists
 X-Auth-Token: {tokenId}
 ```
 

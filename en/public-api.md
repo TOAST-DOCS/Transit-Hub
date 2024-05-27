@@ -287,7 +287,7 @@ Stops the specified node group.
 ### View Attachments
 
 ```
-GET /v2.0/gateways/transithub_attachments/
+GET /v2.0/gateways/transithub_attachments
 X-Auth-Token: {tokenId}
 ```
 
@@ -401,7 +401,7 @@ This API does not require a request body.
 ### Create Attachment
 
 ```
-POST /v2.0/gateways/transithub_attachments/
+POST /v2.0/gateways/transithub_attachments
 X-Auth-Token: {tokenId}
 ```
 
@@ -572,7 +572,7 @@ Stops the specified node group.
 ### View Routing Tables
 
 ```
-GET /v2.0/gateways/transithub_routing_tables/
+GET /v2.0/gateways/transithub_routing_tables
 X-Auth-Token: {tokenId}
 ```
 
@@ -674,7 +674,7 @@ This API does not require a request body.
 ### Create Routing Table
 
 ```
-POST /v2.0/gateways/transithub_routing_tables/
+POST /v2.0/gateways/transithub_routing_tables
 X-Auth-Token: {tokenId}
 ```
 
@@ -831,7 +831,7 @@ Stops the specified node group.
 ### View Routing Associations
 
 ```
-GET /v2.0/gateways/transithub_routing_associations/
+GET /v2.0/gateways/transithub_routing_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -929,7 +929,7 @@ This API does not require a request body.
 ### Create Routing Association
 
 ```
-POST /v2.0/gateways/transithub_routing_associations/
+POST /v2.0/gateways/transithub_routing_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1020,7 +1020,7 @@ Stops the specified node group.
 ### View Routing Associations
 
 ```
-GET /v2.0/gateways/transithub_routing_propagations/
+GET /v2.0/gateways/transithub_routing_propagations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1118,7 +1118,7 @@ This API does not require a request body.
 ### Create Routing Propagation
 
 ```
-POST /v2.0/gateways/transithub_routing_propagations/
+POST /v2.0/gateways/transithub_routing_propagations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1209,7 +1209,7 @@ Stops the specified node group.
 ### View Routing Rules
 
 ```
-GET /v2.0/gateways/transithub_routing_rules/
+GET /v2.0/gateways/transithub_routing_rules
 X-Auth-Token: {tokenId}
 ```
 
@@ -1325,7 +1325,7 @@ This API does not require a request body.
 ### Create Routing Rule
 
 ```
-POST /v2.0/gateways/transithub_routing_rules/
+POST /v2.0/gateways/transithub_routing_rules
 X-Auth-Token: {tokenId}
 ```
 
@@ -1429,7 +1429,7 @@ Stops the specified node group.
 ### View multicast domains
 
 ```
-GET /v2.0/gateways/transithub_multicast_domains/
+GET /v2.0/gateways/transithub_multicast_domains
 X-Auth-Token: {tokenId}
 ```
 
@@ -1527,7 +1527,7 @@ This API does not require a request body.
 ### Create Multicast Domain
 
 ```
-POST /v2.0/gateways/transithub_multicast_domains/
+POST /v2.0/gateways/transithub_multicast_domains
 X-Auth-Token: {tokenId}
 ```
 
@@ -1678,7 +1678,7 @@ Stops the specified node group.
 ### View multicast domains
 
 ```
-GET /v2.0/gateways/transithub_multicast_associations/
+GET /v2.0/gateways/transithub_multicast_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1732,7 +1732,7 @@ This API does not require a request body.
 ### View Multicast Association
 
 ```
-GET /v2.0/gateways/transithub_multicast_domains/{multicastAssociationId}
+GET /v2.0/gateways/transithub_multicast_associations/{multicastAssociationId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -1782,7 +1782,7 @@ This API does not require a request body.
 ### Create Multicast Association
 
 ```
-POST /v2.0/gateways/transithub_multicast_associations/
+POST /v2.0/gateways/transithub_multicast_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1881,7 +1881,7 @@ Stops the specified node group.
 ### View multicast group
 
 ```
-GET /v2.0/gateways/transithub_multicast_groups/
+GET /v2.0/gateways/transithub_multicast_groups
 X-Auth-Token: {tokenId}
 ```
 
@@ -1992,7 +1992,7 @@ This API does not require a request body.
 ### Create Multicast Group
 
 ```
-POST /v2.0/gateways/transithub_multicast_groups/
+POST /v2.0/gateways/transithub_multicast_groups
 X-Auth-Token: {tokenId}
 ```
 
@@ -2093,7 +2093,7 @@ Stops the specified node group.
 ### View Sharing Allowed List
 
 ```
-GET /v2.0/gateways/transithub_allow_projects/
+GET /v2.0/gateways/transithub_allow_projects
 X-Auth-Token: {tokenId}
 ```
 
@@ -2141,7 +2141,7 @@ This API does not require a request body.
 ### Create sharing allowed information
 
 ```
-POST /v2.0/gateways/transithub_allow_projects/
+POST /v2.0/gateways/transithub_allow_projects
 X-Auth-Token: {tokenId}
 ```
 
@@ -2222,7 +2222,7 @@ Stops the specified node group.
 ### View Shared List
 
 ```
-GET /v2.0/gateways/transithub_shared_lists/
+GET /v2.0/gateways/transithub_shared_lists
 X-Auth-Token: {tokenId}
 ```
 
@@ -2276,7 +2276,7 @@ This API does not require a request body.
 ### View Sharing Allowed List
 
 ```
-GET /v2.0/gateways/transithub_multicast_domain_allow_projects/
+GET /v2.0/gateways/transithub_multicast_domain_allow_projects
 X-Auth-Token: {tokenId}
 ```
 
@@ -2324,7 +2324,7 @@ This API does not require a request body.
 ### Create Sharing Allowed Information
 
 ```
-POST /v2.0/gateways/transithub_multicast_domain_allow_projects/
+POST /v2.0/gateways/transithub_multicast_domain_allow_projects
 X-Auth-Token: {tokenId}
 ```
 
@@ -2405,7 +2405,7 @@ Stops the specified node group.
 ### View Shared List
 
 ```
-GET /v2.0/gateways/transithub_multicast_domain_shared_lists/
+GET /v2.0/gateways/transithub_multicast_domain_shared_lists
 X-Auth-Token: {tokenId}
 ```
 
