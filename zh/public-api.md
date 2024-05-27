@@ -2341,7 +2341,7 @@ X-Auth-Token: {tokenId}
 <details><summary>Example</summary>
 
 ```json
-transithub_multicast_domain{
+{
   "transithub_multicast_domain_allow_project": {
     "target_project_id": "cd29a534a15e46049b968dd0835b129b",
     "domain_id": "efb688ea-15c2-4d36-b123-6044e3c37d8c"
