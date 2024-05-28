@@ -287,7 +287,7 @@ X-Auth-Token: {tokenId}
 ### 接続リスト表示
 
 ```
-GET /v2.0/gateways/transithub_attachments/
+GET /v2.0/gateways/transithub_attachments
 X-Auth-Token: {tokenId}
 ```
 
@@ -401,7 +401,7 @@ X-Auth-Token: {tokenId}
 ### 接続を作成する
 
 ```
-POST /v2.0/gateways/transithub_attachments/
+POST /v2.0/gateways/transithub_attachments
 X-Auth-Token: {tokenId}
 ```
 
@@ -572,7 +572,7 @@ X-Auth-Token: {tokenId}
 ### ルーティングテーブルリストの表示
 
 ```
-GET /v2.0/gateways/transithub_routing_tables/
+GET /v2.0/gateways/transithub_routing_tables
 X-Auth-Token: {tokenId}
 ```
 
@@ -674,7 +674,7 @@ X-Auth-Token: {tokenId}
 ### ルーティングテーブルを作成する
 
 ```
-POST /v2.0/gateways/transithub_routing_tables/
+POST /v2.0/gateways/transithub_routing_tables
 X-Auth-Token: {tokenId}
 ```
 
@@ -831,7 +831,7 @@ X-Auth-Token: {tokenId}
 ### ルーティング接続リストを表示
 
 ```
-GET /v2.0/gateways/transithub_routing_associations/
+GET /v2.0/gateways/transithub_routing_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -929,7 +929,7 @@ X-Auth-Token: {tokenId}
 ### ルーティング接続を作成する
 
 ```
-POST /v2.0/gateways/transithub_routing_associations/
+POST /v2.0/gateways/transithub_routing_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1020,7 +1020,7 @@ X-Auth-Token: {tokenId}
 ### ルーティング伝播リストを表示
 
 ```
-GET /v2.0/gateways/transithub_routing_propagations/
+GET /v2.0/gateways/transithub_routing_propagations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1118,7 +1118,7 @@ X-Auth-Token: {tokenId}
 ### ルーティング伝播を作成する
 
 ```
-POST /v2.0/gateways/transithub_routing_propagations/
+POST /v2.0/gateways/transithub_routing_propagations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1209,7 +1209,7 @@ X-Auth-Token: {tokenId}
 ### ルーティングルールリストの表示
 
 ```
-GET /v2.0/gateways/transithub_routing_rules/
+GET /v2.0/gateways/transithub_routing_rules
 X-Auth-Token: {tokenId}
 ```
 
@@ -1325,7 +1325,7 @@ X-Auth-Token: {tokenId}
 ### ルーティングルールを作成する
 
 ```
-POST /v2.0/gateways/transithub_routing_rules/
+POST /v2.0/gateways/transithub_routing_rules
 X-Auth-Token: {tokenId}
 ```
 
@@ -1429,7 +1429,7 @@ X-Auth-Token: {tokenId}
 ### マルチキャストドメインリストの表示
 
 ```
-GET /v2.0/gateways/transithub_multicast_domains/
+GET /v2.0/gateways/transithub_multicast_domains
 X-Auth-Token: {tokenId}
 ```
 
@@ -1527,7 +1527,7 @@ X-Auth-Token: {tokenId}
 ### マルチキャストドメインを作成する
 
 ```
-POST /v2.0/gateways/transithub_multicast_domains/
+POST /v2.0/gateways/transithub_multicast_domains
 X-Auth-Token: {tokenId}
 ```
 
@@ -1678,7 +1678,7 @@ X-Auth-Token: {tokenId}
 ### マルチキャスト接続リストを表示
 
 ```
-GET /v2.0/gateways/transithub_multicast_associations/
+GET /v2.0/gateways/transithub_multicast_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1732,7 +1732,7 @@ X-Auth-Token: {tokenId}
 ### マルチキャスト接続の表示
 
 ```
-GET /v2.0/gateways/transithub_multicast_domains/{multicastAssociationId}
+GET /v2.0/gateways/transithub_multicast_associations/{multicastAssociationId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -1782,7 +1782,7 @@ X-Auth-Token: {tokenId}
 ### マルチキャスト接続を作成する
 
 ```
-POST /v2.0/gateways/transithub_multicast_associations/
+POST /v2.0/gateways/transithub_multicast_associations
 X-Auth-Token: {tokenId}
 ```
 
@@ -1881,7 +1881,7 @@ X-Auth-Token: {tokenId}
 ### マルチキャストグループリストの表示
 
 ```
-GET /v2.0/gateways/transithub_multicast_groups/
+GET /v2.0/gateways/transithub_multicast_groups
 X-Auth-Token: {tokenId}
 ```
 
@@ -1992,7 +1992,7 @@ X-Auth-Token: {tokenId}
 ### マルチキャストグループを作成する
 
 ```
-POST /v2.0/gateways/transithub_multicast_groups/
+POST /v2.0/gateways/transithub_multicast_groups
 X-Auth-Token: {tokenId}
 ```
 
@@ -2093,7 +2093,7 @@ X-Auth-Token: {tokenId}
 ### 共有許可リストを表示
 
 ```
-GET /v2.0/gateways/transithub_allow_projects/
+GET /v2.0/gateways/transithub_allow_projects
 X-Auth-Token: {tokenId}
 ```
 
@@ -2112,7 +2112,7 @@ X-Auth-Token: {tokenId}
 | 名前 | 種類 | 形式 | 説明 |
 |---|---|---|---|
 | transithub_allow_projects | Body | Array | 共有許可情報リスト |
-| transithub_allow_projects.id | Body | UUID | トランジットハブ許可情報ID |
+| transithub_allow_projects.id | Body | UUID | 共有許可情報ID |
 | transithub_allow_projects.tenant_id | Body | String | テナントID |
 | transithub_allow_projects.transithub_id | Body | UUID | 共有するトランジットハブID |
 | transithub_allow_projects.transithub_name | Body | String | トランジットハブ名 |
@@ -2141,7 +2141,7 @@ X-Auth-Token: {tokenId}
 ### 共有許可情報を作成する
 
 ```
-POST /v2.0/gateways/transithub_allow_projects/
+POST /v2.0/gateways/transithub_allow_projects
 X-Auth-Token: {tokenId}
 ```
 
@@ -2151,8 +2151,8 @@ X-Auth-Token: {tokenId}
 |---|---|---|---|---|
 | tokenId | Header | String | O | トークンID |
 | transithub_allow_project | Body | Object | O | 共有許可情報オブジェクト |
-| transithub_allow_projects.transithub_id | Body | UUID | O | 共有するトランジットハブID |
-| transithub_allow_projects.target_project_id | Body | UUID | O | 共有対象プロジェクトID |
+| transithub_allow_project.transithub_id | Body | UUID | O | 共有するトランジットハブID |
+| transithub_allow_project.target_project_id | Body | UUID | O | 共有対象プロジェクトID |
 
 
 <details><summary>例</summary>
@@ -2222,7 +2222,7 @@ X-Auth-Token: {tokenId}
 ### 共有されたリストを表示
 
 ```
-GET /v2.0/gateways/transithub_shared_lists/
+GET /v2.0/gateways/transithub_shared_lists
 X-Auth-Token: {tokenId}
 ```
 
@@ -2257,6 +2257,189 @@ X-Auth-Token: {tokenId}
       "transithub_project_id": "1fb0cf13afb341b699f74bbbecab2117",
       "transithub_name": "thub",
       "transithub_id": "4050efd6-b6cc-4e2d-9402-dd5e1520872f",
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "id": "51c8fd9c-ae82-474f-9664-9fc31c77a563"
+    }
+  ]
+}
+```
+</details>
+
+
+
+
+
+
+
+## マルチキャストドメイン共有
+
+### 共有許可リストを表示
+
+```
+GET /v2.0/gateways/transithub_multicast_domain_allow_projects
+X-Auth-Token: {tokenId}
+```
+
+#### リクエスト
+このAPIはリクエスト本文を要求しません。
+
+| 名前 | 種類 | 形式 | 必須 | 説明 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | トークンID |
+| id | Query | UUID | - | 照会する共有許可情報ID |
+| domain_id | Query | UUID | - | 照会するマルチキャストドメインID |
+
+
+#### レスポンス
+
+| 名前 | 種類 | 形式 | 説明 |
+|---|---|---|---|
+| transithub_multicast_domain_allow_projects | Body | Array | 共有許可情報リスト |
+| transithub_multicast_domain_allow_projects.id | Body | UUID | 共有許可情報ID |
+| transithub_multicast_domain_allow_projects.tenant_id | Body | String | テナントID |
+| transithub_multicast_domain_allow_projects.domain_id | Body | UUID | 共有するマルチキャストドメインID |
+| transithub_multicast_domain_allow_projects.domain_name | Body | String | マルチキャストドメイン名 |
+| transithub_multicast_domain_allow_projects.target_project_id | Body | UUID | 共有対象プロジェクトID |
+
+<details><summary>例</summary>
+
+```json
+{
+  "transithub_multicast_domain_allow_projects": [
+    {
+      "target_project_id": "cd29a534a15e46049b968dd0835b129b",
+      "description": "",
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "domain_name": "domain1",
+      "domain_id": "d55022de-947f-4db3-a7b0-5a4cee9a2369",
+      "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "id": "186717d3-8e26-40ec-ad00-67a8463ccc4c"
+    }
+  ]
+}
+```
+</details>
+
+---
+### 共有許可情報を作成する
+
+```
+POST /v2.0/gateways/transithub_multicast_domain_allow_projects
+X-Auth-Token: {tokenId}
+```
+
+#### リクエスト
+
+| 名前 | 種類 | 形式 | 必須 | 説明 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | トークンID |
+| transithub_multicast_domain_allow_project | Body | Object | O | 共有許可情報オブジェクト |
+| transithub_multicast_domain_allow_project.domain_id | Body | UUID | O | 共有するマルチキャストドメインID |
+| transithub_multicast_domain_allow_project.target_project_id | Body | UUID | O | 共有対象プロジェクトID |
+
+
+<details><summary>例</summary>
+
+```json
+{
+  "transithub_multicast_domain_allow_project": {
+    "target_project_id": "cd29a534a15e46049b968dd0835b129b",
+    "domain_id": "efb688ea-15c2-4d36-b123-6044e3c37d8c"
+  }
+}
+```
+</details>
+
+#### レスポンス
+
+| 名前 | 種類 | 形式 | 説明 |
+|---|---|---|---|
+| transithub_multicast_domain_allow_project | Body | Object | 共有許可情報オブジェクト |
+| transithub_multicast_domain_allow_project.id | Body | UUID | 共有許可情報ID |
+| transithub_multicast_domain_allow_project.tenant_id | Body | String | テナントID |
+| transithub_multicast_domain_allow_project.domain_id | Body | UUID | 共有するマルチキャストドメインID |
+| transithub_multicast_domain_allow_project.domain_name | Body | String | マルチキャストドメイン名 |
+| transithub_multicast_domain_allow_project.target_project_id | Body | UUID | 共有対象プロジェクトID |
+
+
+<details><summary>例</summary>
+
+```json
+{
+  "transithub_multicast_domain_allow_project": {
+    "target_project_id": "cd29a534a15e46049b968dd0835b129b",
+    "description": "",
+    "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "domain_name": "domain1",
+    "domain_id": "d55022de-947f-4db3-a7b0-5a4cee9a2369",
+    "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+    "id": "3d962640-385f-4874-8766-aa1b4480e7e4"
+  }
+}
+```
+</details>
+
+
+---
+### 共有許可情報を削除する
+
+```
+DELETE /v2.0/gateways/transithub_multicast_domain_allow_projects/{allowProjectId}
+X-Auth-Token: {tokenId}
+```
+
+#### リクエスト
+このAPIはリクエスト本文を要求しません。
+
+| 名前 | 種類 | 形式 | 必須 | 説明 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | トークンID |
+| allowProjectId | URL | UUID | O | 共有許可情報ID |
+
+
+#### レスポンス
+このAPIはレスポンス本文を返しません。
+
+
+
+### 共有されたリストを表示
+
+```
+GET /v2.0/gateways/transithub_multicast_domain_shared_lists
+X-Auth-Token: {tokenId}
+```
+
+#### リクエスト
+このAPIはリクエスト本文を要求しません。
+
+| 名前 | 種類 | 形式 | 必須 | 説明 |
+|---|---|---|---|---|
+| tokenId | Header | String | O | トークンID |
+| domain_id | Query | UUID | - | 照会するマルチキャストドメインID |
+
+
+#### レスポンス
+
+| 名前 | 種類 | 形式 | 説明 |
+|---|---|---|---|
+| transithub_multicast_domain_shared_lists | Body | Array | 共有された情報リスト |
+| transithub_multicast_domain_shared_lists.id | Body | UUID | 共有された情報ID |
+| transithub_multicast_domain_shared_lists.tenant_id | Body | String | テナントID |
+| transithub_multicast_domain_shared_lists.domain_id | Body | UUID | 共有されたマルチキャストドメインID |
+| transithub_multicast_domain_shared_lists.domain_name | Body | String | 共有されたマルチキャストドメイン名 |
+| transithub_multicast_domain_shared_lists.domain_project_id | Body | UUID | 共有されたマルチキャストドメインのプロジェクトID |
+
+<details><summary>例</summary>
+
+```json
+{
+  "transithub_multicast_domain_shared_lists": [
+    {
+      "description": "",
+      "tenant_id": "5fdb378e72ca4aff9db04f40f7955f0b",
+      "domain_project_id": "1fb0cf13afb341b699f74bbbecab2117",
+      "domain_name": "domain1",
+      "domain_id": "d55022de-947f-4db3-a7b0-5a4cee9a2369",
       "project_id": "5fdb378e72ca4aff9db04f40f7955f0b",
       "id": "51c8fd9c-ae82-474f-9664-9fc31c77a563"
     }
