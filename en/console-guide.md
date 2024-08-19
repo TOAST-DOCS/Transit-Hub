@@ -30,7 +30,7 @@ A transit hub can be modified as follows. You can only change the name and descr
 
 1. Go to **Network > Transit Hub > Manage**.
 2. Select a transit hub that you want to modify from the list on the screen.
-3. Click **Modify Transit Hubto display the modification screen.
+3. Click **Modify Transit Hub** to display the modification screen.
 4. On the modification screen, make changes to an item.
 
 ### Delete Transit Hub
@@ -58,7 +58,7 @@ If you do not have access to another project, obtain a tenant ID from the admini
 
 ## Attach
 
-Manage **Attachment that defines the relationship between transit hubs and other resources.
+Manage attachment that defines the relationship between transit hubs and other resources.
 
 ### Create Attachment
 
@@ -85,7 +85,7 @@ Attachment can be modified as follows. You can only change the name and descript
 2. In the list of transit hubs, click **View Details** for the transaction hub from which you want to modify the attachment.
 3. Go to the **Attachment** page.
 4. Select attachment you want to modify from the list.
-5. Click **Modify Attachment to display the modification screen.
+5. Click **Modify Attachment** to display the modification screen.
 6. On the modification screen, make changes to an item.
 
 ### Delete Attachment
@@ -96,11 +96,11 @@ To delete attachment, use the following steps.
 2. In the list of transit hubs, click **View Details** for the transaction hub from which you want to delete the attachment.
 3. Go to the **Attachment** page.
 4. Select attachment you want to delete from the list.
-5. Click **Delete Attachment to delete.
+5. Click **Delete Attachment** to delete.
 
 ## Routing Table
 
-Manage the **Routing Table settings on the Transit Hub.
+Manage the Routing Table settings on the Transit Hub.
 
 ### Create Routing table
 
@@ -109,7 +109,7 @@ To create a routing table, use the following steps.
 1. Go to **Network > Transit Hub > Manage**.
 2. In the list of transit hubs, click **View Details** for the transaction hub from which you want to create a routing table.
 3. Go to the **Routing Tables** page.
-4. Click **Create Routing Table to display the creation screen.
+4. Click **Create Routing Table** to display the creation screen.
 5. On the creation screen, enter the information about the routing table.
     * Name: Enter a routing table name.
     * Description: Describe the description of a routing table.
@@ -122,12 +122,12 @@ Routing table can be modified as follows. You can only change the name and descr
 2. In the list of transit hubs, click **View Details** for the transaction hub from which you want to modify a routing table.
 3. Go to the **Routing Tables** page.
 4. Select a routing table you want to change from the list.
-5. Click **Modify** Routing Table to display the modification screen.
+5. Click **Modify Routing Table** to display the modification screen.
 6. On the modification screen, make changes to an item.
 
 ### Delete Routing Table
 
-To delete routing table , use the following steps.
+To delete routing table, use the following steps.
 
 1. Go to **Network > Transit Hub > Manage**.
 2. In the list of transit hubs, click **View Details** for the transaction hub from which you want to delete a routing table.
@@ -145,7 +145,7 @@ You can check the basic information for the selected routing table.
 
 #### Routing Association
 
-Manage **routing association** that defines the relationship with the **attachment for routing table to receive packets.
+Manage **routing association** that defines the relationship with the attachment for routing table to receive packets.
 
 ##### Create Routing Association
 
@@ -227,7 +227,7 @@ To create a routing rule, use the following steps.
     * CIDR: Enter the destination network band for the routing policy.
     > [Note] The priority of routing rules in the routing table is determined by the Longest Pre-fix Matching result of CIDR set in the routing rule.
     * Method: Select how to handle packets matched to the CIDR. Selecting **FORWARD** will send the packets to the specified attachment, and selecting **BLACKHOLE** will destroy the packets.
-    * Attach: If \*\*FORWARD** is selected from **Method**, select **attachment** to send packets from **Routing Table**.
+    * Attach: If **FORWARD** is selected from **Method**, select **attachment** to send packets from **Routing Table**.
 
 ##### Delete Routing Rule
 
@@ -294,11 +294,11 @@ If you do not have access to another project, obtain a tenant ID from the admini
 > 1. Access the console screen of the project.
 > 2. Go to **Network > VPC > Management**.
 > 3. Select one of the VPCs that appears in the screen list.
-> 4. Copy the ID value shown in **Basic Information > Tenant ID.
+> 4. Copy the ID value shown in **Basic Information > Tenant ID**.
 
 ### Manage Multicast
 
-Check basic information for the selected **multicast domain and manage the packet handling policy and settings associated with the multicast.
+Check basic information for the selected multicast domain and manage the packet handling policy and settings associated with the multicast.
 
 #### Basic Information
 
@@ -306,7 +306,7 @@ You can check the basic information for the selected multicast domain.
 
 #### Multicast Association
 
-Manage **multicast associations** join subnets of VPC-type **attachments to multicast networks in multicast domains.
+Manage multicast associations join subnets of VPC-type attachments to multicast networks in multicast domains.
 > [Note]
 > * Only **attachment** of VPC type is available on multicast association.
 > * **Attachment** created in other project by transit hubs shared with other projects cannot be used in multicast association.
