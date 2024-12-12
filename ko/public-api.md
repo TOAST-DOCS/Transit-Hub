@@ -2116,7 +2116,7 @@ X-Auth-Token: {tokenId}
 | transithub_allow_projects.tenant_id | Body | String | 테넌트 ID |
 | transithub_allow_projects.transithub_id | Body | UUID | 공유할 트랜짓 허브 ID |
 | transithub_allow_projects.transithub_name | Body | String | 트랜짓 허브 이름 |
-| transithub_allow_projects.target_project_id | Body | UUID | 공유 대상 프로젝트 ID |
+| transithub_allow_projects.target_project_id | Body | UUID | 공유 대상 테넌트 ID |
 
 <details><summary>예시</summary>
   
@@ -2152,7 +2152,7 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | O | 토큰 ID |
 | transithub_allow_project | Body | Object | O | 공유 허용 정보 객체 |
 | transithub_allow_project.transithub_id | Body | UUID | O | 공유할 트랜짓 허브 ID |
-| transithub_allow_project.target_project_id | Body | UUID | O | 공유 대상 프로젝트 ID |
+| transithub_allow_project.target_project_id | Body | UUID | O | 공유 대상 테넌트 ID |
 
 
 <details><summary>예시</summary>
@@ -2176,7 +2176,7 @@ X-Auth-Token: {tokenId}
 | transithub_allow_project.tenant_id | Body | String | 테넌트 ID |
 | transithub_allow_project.transithub_id | Body | UUID | 공유할 트랜짓 허브 ID |
 | transithub_allow_project.transithub_name | Body | String | 트랜짓 허브 이름 |
-| transithub_allow_project.target_project_id | Body | UUID | 공유 대상 프로젝트 ID |
+| transithub_allow_project.target_project_id | Body | UUID | 공유 대상 테넌트 ID |
 
 
 <details><summary>예시</summary>
@@ -2244,7 +2244,7 @@ X-Auth-Token: {tokenId}
 | transithub_shared_lists.tenant_id | Body | String | 테넌트 ID |
 | transithub_shared_lists.transithub_id | Body | UUID | 공유 받은 트랜짓 허브 ID |
 | transithub_shared_lists.transithub_name | Body | String | 공유 받은 트랜짓 허브 이름 |
-| transithub_shared_lists.transithub_project_id | Body | UUID | 공유 받은 트랜짓 허브의 프로젝트 ID |
+| transithub_shared_lists.transithub_project_id | Body | UUID | 공유 받은 트랜짓 허브의 테넌트 ID |
 
 <details><summary>예시</summary>
   
@@ -2299,7 +2299,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_domain_allow_projects.tenant_id | Body | String | 테넌트 ID |
 | transithub_multicast_domain_allow_projects.domain_id | Body | UUID | 공유할 멀티캐스트 도메인 ID |
 | transithub_multicast_domain_allow_projects.domain_name | Body | String | 멀티캐스트 도메인 이름 |
-| transithub_multicast_domain_allow_projects.target_project_id | Body | UUID | 공유 대상 프로젝트 ID |
+| transithub_multicast_domain_allow_projects.target_project_id | Body | UUID | 공유 대상 테넌트 ID |
 
 <details><summary>예시</summary>
   
@@ -2335,7 +2335,7 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | O | 토큰 ID |
 | transithub_multicast_domain_allow_project | Body | Object | O | 공유 허용 정보 객체 |
 | transithub_multicast_domain_allow_project.domain_id | Body | UUID | O | 공유할 멀티캐스트 도메인 ID |
-| transithub_multicast_domain_allow_project.target_project_id | Body | UUID | O | 공유 대상 프로젝트 ID |
+| transithub_multicast_domain_allow_project.target_project_id | Body | UUID | O | 공유 대상 테넌트 ID |
 
 
 <details><summary>예시</summary>
@@ -2359,7 +2359,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_domain_allow_project.tenant_id | Body | String | 테넌트 ID |
 | transithub_multicast_domain_allow_project.domain_id | Body | UUID | 공유할 멀티캐스트 도메인 ID |
 | transithub_multicast_domain_allow_project.domain_name | Body | String | 멀티캐스트 도메인 이름 |
-| transithub_multicast_domain_allow_project.target_project_id | Body | UUID | 공유 대상 프로젝트 ID |
+| transithub_multicast_domain_allow_project.target_project_id | Body | UUID | 공유 대상 테넌트 ID |
 
 
 <details><summary>예시</summary>
@@ -2427,7 +2427,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_domain_shared_lists.tenant_id | Body | String | 테넌트 ID |
 | transithub_multicast_domain_shared_lists.domain_id | Body | UUID | 공유 받은 멀티캐스트 도메인 ID |
 | transithub_multicast_domain_shared_lists.domain_name | Body | String | 공유 받은 멀티캐스트 도메인 이름 |
-| transithub_multicast_domain_shared_lists.domain_project_id | Body | UUID | 공유 받은 멀티캐스트 도메인의 프로젝트 ID |
+| transithub_multicast_domain_shared_lists.domain_project_id | Body | UUID | 공유 받은 멀티캐스트 도메인의 테넌트 ID |
 
 <details><summary>예시</summary>
   
