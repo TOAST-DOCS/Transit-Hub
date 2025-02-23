@@ -2116,7 +2116,7 @@ X-Auth-Token: {tokenId}
 | transithub_allow_projects.tenant_id | Body | String | テナントID |
 | transithub_allow_projects.transithub_id | Body | UUID | 共有するトランジットハブID |
 | transithub_allow_projects.transithub_name | Body | String | トランジットハブ名 |
-| transithub_allow_projects.target_project_id | Body | UUID | 共有対象プロジェクトID |
+| transithub_allow_projects.target_project_id | Body | UUID | 共有対象テナントID |
 
 <details><summary>例</summary>
   
@@ -2152,7 +2152,7 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | O | トークンID |
 | transithub_allow_project | Body | Object | O | 共有許可情報オブジェクト |
 | transithub_allow_project.transithub_id | Body | UUID | O | 共有するトランジットハブID |
-| transithub_allow_project.target_project_id | Body | UUID | O | 共有対象プロジェクトID |
+| transithub_allow_project.target_project_id | Body | UUID | O | 共有対象テナントID |
 
 
 <details><summary>例</summary>
@@ -2176,7 +2176,7 @@ X-Auth-Token: {tokenId}
 | transithub_allow_project.tenant_id | Body | String | テナントID |
 | transithub_allow_project.transithub_id | Body | UUID | 共有するトランジットハブID |
 | transithub_allow_project.transithub_name | Body | String | トランジットハブ名 |
-| transithub_allow_project.target_project_id | Body | UUID | 共有対象プロジェクトID |
+| transithub_allow_project.target_project_id | Body | UUID | 共有対象テナントID |
 
 
 <details><summary>例</summary>
@@ -2244,7 +2244,7 @@ X-Auth-Token: {tokenId}
 | transithub_shared_lists.tenant_id | Body | String | テナントID |
 | transithub_shared_lists.transithub_id | Body | UUID | 共有されたトランジットハブID |
 | transithub_shared_lists.transithub_name | Body | String | 共有されたトランジットハブ名 |
-| transithub_shared_lists.transithub_project_id | Body | UUID | 共有されたトランジットハブのプロジェクトID |
+| transithub_shared_lists.transithub_project_id | Body | UUID | 共有されたトランジットハブのテナントID |
 
 <details><summary>例</summary>
   
@@ -2299,7 +2299,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_domain_allow_projects.tenant_id | Body | String | テナントID |
 | transithub_multicast_domain_allow_projects.domain_id | Body | UUID | 共有するマルチキャストドメインID |
 | transithub_multicast_domain_allow_projects.domain_name | Body | String | マルチキャストドメイン名 |
-| transithub_multicast_domain_allow_projects.target_project_id | Body | UUID | 共有対象プロジェクトID |
+| transithub_multicast_domain_allow_projects.target_project_id | Body | UUID | 共有対象テナントID |
 
 <details><summary>例</summary>
 
@@ -2335,7 +2335,7 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | O | トークンID |
 | transithub_multicast_domain_allow_project | Body | Object | O | 共有許可情報オブジェクト |
 | transithub_multicast_domain_allow_project.domain_id | Body | UUID | O | 共有するマルチキャストドメインID |
-| transithub_multicast_domain_allow_project.target_project_id | Body | UUID | O | 共有対象プロジェクトID |
+| transithub_multicast_domain_allow_project.target_project_id | Body | UUID | O | 共有対象テナントID |
 
 
 <details><summary>例</summary>
@@ -2359,7 +2359,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_domain_allow_project.tenant_id | Body | String | テナントID |
 | transithub_multicast_domain_allow_project.domain_id | Body | UUID | 共有するマルチキャストドメインID |
 | transithub_multicast_domain_allow_project.domain_name | Body | String | マルチキャストドメイン名 |
-| transithub_multicast_domain_allow_project.target_project_id | Body | UUID | 共有対象プロジェクトID |
+| transithub_multicast_domain_allow_project.target_project_id | Body | UUID | 共有対象テナントID |
 
 
 <details><summary>例</summary>
@@ -2427,7 +2427,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_domain_shared_lists.tenant_id | Body | String | テナントID |
 | transithub_multicast_domain_shared_lists.domain_id | Body | UUID | 共有されたマルチキャストドメインID |
 | transithub_multicast_domain_shared_lists.domain_name | Body | String | 共有されたマルチキャストドメイン名 |
-| transithub_multicast_domain_shared_lists.domain_project_id | Body | UUID | 共有されたマルチキャストドメインのプロジェクトID |
+| transithub_multicast_domain_shared_lists.domain_project_id | Body | UUID | 共有されたマルチキャストドメインのテナントID |
 
 <details><summary>例</summary>
 
