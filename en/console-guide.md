@@ -357,7 +357,7 @@ To create Multicast group, use the following steps.
     * Network interface: Select ** network interface .
     * Group IP Address: Enter the multicast IP address.
     > [Note]
-    > * Must be entered in the range of 224.0.0.0/4.
+    > * The multicast IP address must be within the range 224.0.0.0/4.
     > * 221.0.0.1 cannot be entered. 
     * Type: Choose between member and source
         * Member<br>
