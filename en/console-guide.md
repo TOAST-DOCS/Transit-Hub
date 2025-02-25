@@ -353,8 +353,8 @@ To create Multicast group, use the following steps.
 5. Go to the **Multicast Group** page.
 6. Click **Create Multicast Group** to display the creation screen.
 7. On the creation screen, enter the information about multicast domain.
-    * Multicast association: Select **multicast association.
-    * Network interface: Select ** network interface .
+    * Multicast association: Select **Multicast Association**.
+    * Network interface: Select **Network Interface* .
     * Group IP Address: Enter the multicast IP address.
     > [Note]
     > * The multicast IP address must be within the range 224.0.0.0/4.
