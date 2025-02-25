@@ -2116,7 +2116,7 @@ This API does not require a request body.
 | transithub_allow_projects.tenant_id | String | Token ID | Tenant ID |
 | transithub_allow_projects.transithub_id | String | UUID | Transit hub ID to share |
 | transithub_allow_projects.transithub_name | String | Token ID | Transit Hub Name |
-| transithub_allow_projects.target_project_id | String | UUID | Project ID to share with |
+| transithub_allow_projects.target_project_id | String | UUID | Tenant ID to share with |
 
 <details><summary>Example</summary>
   
@@ -2152,7 +2152,7 @@ X-Auth-Token: {tokenId}
 | String | O | Token ID | Response | Token ID |
 | transithub_allow_project | String | Object | Response | Share sharing allowed information object |
 | transithub_allow_project.transithub_id | String | UUID | Response | Transit hub ID to share |
-| transithub_allow_project.target_project_id | String | UUID | Response | Project ID to share with |
+| transithub_allow_project.target_project_id | String | UUID | Response | Tenant ID to share with |
 
 
 <details><summary>Example</summary>
@@ -2176,7 +2176,7 @@ X-Auth-Token: {tokenId}
 | transithub_allow_project.tenant_id | String | Token ID | Tenant ID |
 | transithub_allow_project.transithub_id | String | UUID | Transit hub ID to share |
 | transithub_allow_project.transithub_name | String | Token ID | Transit Hub Name |
-| transithub_allow_project.target_project_id | String | UUID | Project ID to share with |
+| transithub_allow_project.target_project_id | String | UUID | Tenant ID to share with |
 
 
 <details><summary>Example</summary>
@@ -2244,7 +2244,7 @@ This API does not require a request body.
 | transithub_shared_lists.tenant_id | String | Token ID | Tenant ID |
 | transithub_shared_lists.transithub_id | String | UUID | Shared Transit Hub ID |
 | transithub_shared_lists.transithub_name | String | Token ID | Shared transit hub name |
-| transithub_shared_lists.transithub_project_id | String | UUID | Project ID of the shared transit hub |
+| transithub_shared_lists.transithub_project_id | String | UUID | Tenant ID of the shared transit hub |
 
 <details><summary>Example</summary>
   
@@ -2299,7 +2299,7 @@ This API does not require a request body.
 | transithub_multicast_domain_allow_projects.tenant_id | String | Token ID | Tenant ID |
 | transithub_multicast_domain_allow_projects.domain_id | String | UUID | Multicast domain ID to share |
 | transithub_multicast_domain_allow_projects.domain_name | String | Token ID | Multicast domain name |
-| transithub_multicast_domain_allow_projects.target_project_id | String | UUID | Project ID to share with |
+| transithub_multicast_domain_allow_projects.target_project_id | String | UUID | Tenant ID to share with |
 
 <details><summary>Example</summary>
   
@@ -2335,7 +2335,7 @@ X-Auth-Token: {tokenId}
 | String | O | Token ID | Response | Token ID |
 | transithub_multicast_domain_allow_project | String | Object | Response | Share sharing allowed information object |
 | transithub_multicast_domain_allow_project.domain_id | String | UUID | Response | Multicast domain ID to share |
-| transithub_multicast_domain_allow_project.target_project_id | String | UUID | Response | Project ID to share with |
+| transithub_multicast_domain_allow_project.target_project_id | String | UUID | Response | Tenant ID to share with |
 
 
 <details><summary>Example</summary>
@@ -2359,7 +2359,7 @@ X-Auth-Token: {tokenId}
 | transithub_multicast_domain_allow_project.tenant_id | String | Token ID | Tenant ID |
 | transithub_multicast_domain_allow_project.domain_id | String | UUID | Multicast domain ID to share |
 | transithub_multicast_domain_allow_project.domain_name | String | Token ID | Multicast domain name |
-| transithub_multicast_domain_allow_project.target_project_id | String | UUID | Project ID to share with |
+| transithub_multicast_domain_allow_project.target_project_id | String | UUID | Tenant ID to share with |
 
 
 <details><summary>Example</summary>
@@ -2427,7 +2427,7 @@ This API does not require a request body.
 | transithub_multicast_domain_shared_lists.tenant_id | String | Token ID | Tenant ID |
 | transithub_multicast_domain_shared_lists.domain_id | String | UUID | Shared multicast domain ID  |
 | transithub_multicast_domain_shared_lists.domain_name | String | Token ID | Shared multicast domain name |
-| transithub_multicast_domain_shared_lists.domain_project_id | String | UUID | Project ID of the shared multicast domain |
+| transithub_multicast_domain_shared_lists.domain_project_id | String | UUID | Tenant ID of the shared multicast domain |
 
 <details><summary>Example</summary>
   
